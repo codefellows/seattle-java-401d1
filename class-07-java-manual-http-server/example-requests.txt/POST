@@ -1,0 +1,7 @@
+POST /lulwat/cool HTTP/1.1
+Host: teachbox.local
+Accept: application/json
+Content-Type: application/json
+Content-Length: 23
+
+{"username":"slugbyte"}

@@ -1,0 +1,24 @@
+
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(©Êû±ùÿÿÿÿ8¹Ä×€,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ş“ŒÚ8Ò¹…×€,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(±¼àùÿÿÿÿ8äœ“×€,
+{squid:S1488"ZImmediately return this expression instead of assigning it to the temporary variable "s2".(ÑÂ‘åùÿÿÿÿ8šô™×€,
+Fsquid:S00108")Either remove or fill this block of code.(å¥‡8€èĞ×€,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(‚ÖÔü8äœ“×€,
+ƒsquid:S4087"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(æŒÕ®ùÿÿÿÿ8ò±¢×€,
+]squid:S1075"ARefactor your code to get this URI from a customizable parameter.(¼éà«8Óó‰×€,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(˜ç‘¹8ëÏ×€,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ñË©ùÿÿÿÿ8éÓ’×€,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£©¤×€,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8£©¤×€,
+Csquid:S1905"'Remove this unnecessary cast to "byte".(á¾¹©8€èĞ×€,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(âƒšĞ8äœ“×€,
+1squid:S1220""Move this file to a named package.

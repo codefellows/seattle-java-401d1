@@ -1,0 +1,6 @@
+
+zsquid:S1488"`Immediately return this expression instead of assigning it to the temporary variable "username".(‡ž¤Ðþÿÿÿÿ
+Tsquid:S1118":Add a private constructor to hide the implicit public one.(îýœþùÿÿÿÿ
+Tsquid:UselessImportCheck"3Remove this unused import 'android.content.Intent'.(³ð‹G
+nsquid:UselessImportCheck"MRemove this unused import 'com.example.moonmayor.whatswhatsapp.MainActivity'.(Î«¾
+psquid:UselessImportCheck"NRemove this unused import 'com.example.moonmayor.whatswhatsapp.LoginActivity'.(±œ’È

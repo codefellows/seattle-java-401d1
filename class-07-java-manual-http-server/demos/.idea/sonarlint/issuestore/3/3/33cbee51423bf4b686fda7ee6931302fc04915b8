@@ -1,0 +1,16 @@
+
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ò°÷Ýúÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(ä°˜…úÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(ð«§Àþÿÿÿÿ
+<squid:S2189""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(á‡ÔŽ
+dsquid:S2095"JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(³ÌÄýÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(±ïü
+Rsquid:S1197"8Move the array designator from the variable to the type.(‘þªâùÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(±»ù˜üÿÿÿÿ

@@ -1,0 +1,7 @@
+
+Tsquid:UselessImportCheck"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ
+dsquid:MaximumInheritanceDepth"=This class has 10 parents which is greater than 5 authorized.(²Ú±
+~squid:S1450"dRemove the "mConversationsAdapter" field and declare it as a local variable in the relevant methods.(”ˆÕœüÿÿÿÿ
+rsquid:S1450"XRemove the "mUsername" field and declare it as a local variable in the relevant methods.(ÙïŠÏıÿÿÿÿ
+_squid:UselessImportCheck">Remove this unused import 'android.content.SharedPreferences'.(íÎÉr
+zsquid:S1450"eRemove the "mConversationsListView" field and declare it as a local variable in the relevant methods.(œñÃ

@@ -1,0 +1,27 @@
+
+Bsquid:S1444"-Make this "public static ALL_WEB" field final(Éİüğ
+Osquid:S1191"5Use classes from the Java API instead of Sun classes.(™¦èûÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¯·Úıÿÿÿÿ
+@squid:S1444"+Make this "public static START" field final(º±÷®
+Fsquid:S1444",Make this "public static FINISH" field final(ªìåÕşÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(â®¬Éüÿÿÿÿ
+ƒ"squid:ClassVariableVisibilityCheck"RMake FINISH a static final constant or non-public and provide accessors if needed.(ªìåÕşÿÿÿÿ
+Wsquid:S2259"BA "NullPointerException" could be thrown; "page" is nullable here.(ÈÁ¹
+?squid:S00108")Either remove or fill this block of code.(ï­£Ä
+usquid:UselessImportCheck"NRemove this unused import 'com.sun.org.apache.xpath.internal.operations.Bool'.(™¦èûÿÿÿÿ
+ksquid:S3008"QRename this field "FINISH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªìåÕşÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÇÀ
+}"squid:ClassVariableVisibilityCheck"QMake START a static final constant or non-public and provide accessors if needed.(º±÷®
+"squid:ClassVariableVisibilityCheck"SMake ALL_WEB a static final constant or non-public and provide accessors if needed.(Éİüğ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+asquid:UselessImportCheck":Remove this unused import 'sun.jvm.hotspot.debugger.Page'.(Ù£ùßøÿÿÿÿ
+esquid:S3008"PRename this field "START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º±÷®
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ı„¦ì
+gsquid:S3008"RRename this field "ALL_WEB" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éİüğ
+1squid:S1220""Move this file to a named package.
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(‘ß†Ûûÿÿÿÿ

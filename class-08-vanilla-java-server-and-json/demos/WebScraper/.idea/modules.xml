@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WebScraper.iml" filepath="$PROJECT_DIR$/WebScraper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WebScraper_main.iml" filepath="$PROJECT_DIR$/.idea/modules/WebScraper_main.iml" group="WebScraper" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WebScraper_test.iml" filepath="$PROJECT_DIR$/.idea/modules/WebScraper_test.iml" group="WebScraper" />
+    </modules>
+  </component>
+</project>

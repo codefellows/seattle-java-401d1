@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JDBCPostgres.iml" filepath="$PROJECT_DIR$/.idea/modules/JDBCPostgres.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JDBCPostgres_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JDBCPostgres_main.iml" group="JDBCPostgres" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JDBCPostgres_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JDBCPostgres_test.iml" group="JDBCPostgres" />
+    </modules>
+  </component>
+</project>

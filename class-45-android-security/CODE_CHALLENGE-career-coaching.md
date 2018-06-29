@@ -1,0 +1,1 @@
+No code challenge today. This time is reserved for career coaching.
