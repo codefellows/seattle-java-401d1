@@ -1,7 +1,9 @@
 # ![CF](http://i.imgur.com/7v5ASc8.png) Seattle 401d1 Java
 
 ## Course Staff
-* Instructor: Steve Geluso
+* Instructor: [Steve Geluso](http://github.com/)
+* Lead TA: [Molly Kent](http://github.com/mollyfish)
+* TA: [Darcy McCabe](http://github.com/darms)
 
 ## Official Course Links
 * [Course Lecture Repo](https://github.com/codefellows/seattle-java-401d1)
@@ -20,18 +22,18 @@
 * Week 8 Friday August 31
 
 ## Students
-* Ahmed Osman
-* Amy Cohen
-* Brandon Fenty
-* Jimmy Chang
-* Nicklas Di
-* Panos Kumasaka
-* Paul Suarez 
-* Suzanne Richman
-* Tara Johnson
-* Timothy Busch
-* Travis Williams 
-* Mark Pearson
+* [Ahmed Osman](http://github.com/)
+* [Amy Cohen](http://github.com/)
+* [Brandon Fenty](http://github.com/)
+* [Jimmy Chang](http://github.com/)
+* [Nicklas Di](http://github.com/)
+* [Panos Kumasaka](http://github.com/)
+* [Paul Suarez ](http://github.com/)
+* [Suzanne Richman](http://github.com/)
+* [Tara Johnson](http://github.com/)
+* [Timothy Busch](http://github.com/)
+* [Travis Williams ](http://github.com/)
+* [Mark Pearson](http://github.com/)
 
 
 
