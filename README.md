@@ -22,20 +22,17 @@
 * Week 8 Friday August 31
 
 ## Students
-* [Ahmed Osman](http://github.com/)
+* [Ahmed Osman](http://github.com/AOhassan)
 * [Amy Cohen](https://github.com/AmyCohen)
 * [Brandon Fenty](https://github.com/brandon-fenty)
-* [Jimmy Chang](http://github.com/)
 * [Nicklas Di](https://github.com/Seiyaroo)
-* [Panos Kumasaka](http://github.com/)
+* [Panos Kumasaka](http://github.com/spinaltaper)
 * [Paul Suarez ](https://github.com/PaulSuarez1)
 * [Suzanne Richman](https://github.com/FavoredFortune)
 * [Tara Johnson](https://github.com/tara-johnson)
 * [Timothy Busch](https://github.com/GoldBeardSea)
 * [Travis Williams ](https://github.com/thetravisw)
 * [Mark Pearson](https://github.com/louiethe17th)
-
-
 
 ## Table of Contents
 * [class-01](./class-01-java-testing-primitives-control-flow)
