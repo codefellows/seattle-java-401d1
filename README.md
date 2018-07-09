@@ -23,17 +23,17 @@
 
 ## Students
 * [Ahmed Osman](http://github.com/)
-* [Amy Cohen](http://github.com/)
-* [Brandon Fenty](http://github.com/)
+* [Amy Cohen](https://github.com/AmyCohen)
+* [Brandon Fenty](https://github.com/brandon-fenty)
 * [Jimmy Chang](http://github.com/)
-* [Nicklas Di](http://github.com/)
+* [Nicklas Di](https://github.com/Seiyaroo)
 * [Panos Kumasaka](http://github.com/)
-* [Paul Suarez ](http://github.com/)
-* [Suzanne Richman](http://github.com/)
-* [Tara Johnson](http://github.com/)
-* [Timothy Busch](http://github.com/)
-* [Travis Williams ](http://github.com/)
-* [Mark Pearson](http://github.com/)
+* [Paul Suarez ](https://github.com/PaulSuarez1)
+* [Suzanne Richman](https://github.com/FavoredFortune)
+* [Tara Johnson](https://github.com/tara-johnson)
+* [Timothy Busch](https://github.com/GoldBeardSea)
+* [Travis Williams ](https://github.com/thetravisw)
+* [Mark Pearson](https://github.com/louiethe17th)
 
 
 
