@@ -22,12 +22,12 @@
 * Week 8 Friday August 31
 
 ## Students
-* [Ahmed Osman](http://github.com/)
+* [Ahmed Osman](https://github.com/AOhassan)
 * [Amy Cohen](https://github.com/AmyCohen)
 * [Brandon Fenty](https://github.com/brandon-fenty)
 * [Jimmy Chang](http://github.com/)
 * [Nicklas Di](https://github.com/Seiyaroo)
-* [Panos Kumasaka](http://github.com/)
+* [Panos Kumasaka](https://github.com/spinaltaper)
 * [Paul Suarez ](https://github.com/PaulSuarez1)
 * [Suzanne Richman](https://github.com/FavoredFortune)
 * [Tara Johnson](https://github.com/tara-johnson)
