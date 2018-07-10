@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Java Collections</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-inline-code {
+        color: rgb(66, 134, 244);
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+# Class 02: Arrays, Lists, Sets, Maps (Collections)
+Reminders:
+
+* Printing vs returning a string
+* overview of class, main method, function, everything static
+* Yes, arrays are in curly bois
+
+---
+
+## Arrays
+* Fixed size
+* read `aa[i]`
+* write `aa[i] = 12`
+
+```java
+int[] a1 = {21, 54, 75};
+int[] a2 = new int[3];
+for (int i = 0; i < a2.length; i++) {
+  System.out.println(a2[i]);
+}
+```
+
+---
+## List
+https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+
+* Squishy(non-fixed size)
+* read `ll.get(i)`
+* write `ll.set(i, 12)`
+
+```java
+List<Integer> ll = new ArrayList<>();
+ll.add(21);
+ll.add(54);
+ll.add(75);
+
+for (int i = 0; i < ll.size(); i++) {
+  System.out.println(ll.get(i));
+}
+```
+
+---
+## Set
+https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html
+
+* Unordered. Not addressable by any index.
+* All unique elements. Adding something twice will not affect the set.
+* `ss.add(12)`
+* `ss.contains(12)`
+* `ss.remove(12)`
+
+```java
+Set<Integer> ss = new HashSet<>();
+ss.add(12);
+ss.add(12);
+ss.add(93);
+
+for (int value : ss) {
+  System.out.println(value);
+}
+```
+
+---
+## Map
+https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html
+
+* Stores key/value pairs
+* `map.size()`
+* `map.put(key, value)`
+* `map.get(key)`
+* `map.containsKey(key)`
+
+```java
+Map<Integer, String> neighborhoods = new HashMap<>();
+neighborhoods.put(98105, "U District");
+```
+</textarea>
+    <!-- <script src="https://remarkjs.com/downloads/remark-latest.min.js"> -->
+    <script src="file:///Users/moonmayor/Third/remark/out/remark.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+    <!-- <script src="http://5tephen.com/js/remarkable.js"></script> -->
+  </body>
+</html>
