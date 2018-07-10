@@ -1,0 +1,15 @@
+
+Esquid:S1481")Remove this unused "name" local variable.(·¿Ú8„Ğ‡ŠÈ,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(†¸ô…8ï²€ŠÈ,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ƒ¡‡Ãşÿÿÿÿ8îöŠÈ,
+Tsquid:S1854"8Remove this useless assignment to local variable "name".(·¿Ú8„Ğ‡ŠÈ,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(×øŒ“8îöŠÈ,
+Ksquid:S1481"*Remove this unused "isOdd" local variable.(ı®º­úÿÿÿÿ8¾ŠŠÈ,
+Bsquid:S1481"&Remove this unused "n" local variable.(¢˜È˜8„Ğ‡ŠÈ,
+1squid:S1220""Move this file to a named package.
+Qsquid:S1854"5Remove this useless assignment to local variable "n".(¢˜È˜8„Ğ‡ŠÈ,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(»›Âï8ôÎğ‰È,
