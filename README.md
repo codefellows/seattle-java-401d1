@@ -17,9 +17,9 @@
 * Final Presentations: Friday September 14th 3PM
 
 ## Career Coaching
-* Week 3 Friday July 27
-* Week 7 Friday August 24
-* Week 8 Friday August 31
+* Week 4 Friday August 3rd
+* Week 6 Friday August 17th
+* Week 8 Friday August 31st
 
 ## Students
 * [Ahmed Osman](http://github.com/AOhassan)
