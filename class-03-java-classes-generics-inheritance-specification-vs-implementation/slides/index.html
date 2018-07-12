@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Java Classes, Custom Objects, Generics</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-inline-code {
+        color: rgb(66, 134, 244);
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+# Class 03: Java Classes, Custom Objects, Generics
+Reminders:
+
+* Arrays are fixed size
+* Lists are built out of arrays
+* Sets contain unique values
+* Sets are unordered
+
+---
+# public static void main(String[] args)
+The String array parameter to the main method is there so programs have access
+to arguments passed to the program when it runs.
+
+You can create programs that read in user input and do stuff with it!
+
+```java
+public class CommandLineTool {
+  public static void main(String[] args) {
+    for (int i = 0; i < args.length; i++) {
+      System.out.println("Argument #" + i + ": " + args[i]);
+    }
+  }
+}
+```
+
+Now you can compile your program on the command line and run it and pass
+arguments to it!
+
+```bash
+javac CommandLineTool.java
+java CommandLineTool these are arguments to the program
+```
+
+---
+# ArrayIndexOutOfBoundsException
+* This error appears when you try to access an index of an array that doesn't
+  exist.
+* Remember arrays are indexed starting at `0`
+* Arrays never have negative indexes
+
+```java
+int[] aa = {0, 1, 2}
+
+aa[0]  // good
+aa[1]  // good
+aa[2]  // good
+
+aa[-1] // bad!! ArrayIndexOutOfBoundsException
+aa[3]  // bad!! ArrayIndexOutOfBoundsException
+aa[4]  // bad!! ArrayIndexOutOfBoundsException
+aa[99] // bad!! ArrayIndexOutOfBoundsException
+```
+
+---
+# Method Overloading
+https://beginnersbook.com/2013/05/method-overloading/
+
+* Java allows us to create multiple methods with the samename.
+* Methods with the same name must accept different parameters.
+* Java distinguishes between the different methods by looking at the types of
+  each parameter
+
+You could make a method that computes the distance from `(0,0)` by default,
+and another with the same name that computes the distance between two points.
+
+```
+public double distance(int x, int y)
+public double distance(int x1, int y1, int x2, int y2)
+```
+
+You could define one `pop` method that pops things off the back of a list,
+and another `pop` method that pops elements off at a given index.
+
+```
+public int pop()
+public int pop(int index)
+```
+
+---
+# Java Classes
+* Java is an **Object-Oriented** language
+* Everything is objects!!
+* Wait, what the heck are these objy-bois?
+
+* Objects allow you to define your own custom things to use in the language.
+* Classes define objects
+
+* Let's make something that represents a 2D Point
+  * A point has a `x` value
+  * A point has a `y` value
+  * A point has a `distance` method
+
+---
+# Point
+
+```java
+public class Point {
+  public int x;
+  public int y;
+
+  // the constructor defines how objects are constructed
+  public Point(int x, int y) {
+    this.x = x;  
+    this.y = y;  
+  }
+
+  public int distance(int x2, int y2) {
+    int dx = this.x - x2;
+    int dy = this.y - y2;
+
+    double result = Math.sqrt(dx * dx + dy * dy);
+    return result;
+  }
+}
+```
+
+---
+# The Constructor
+
+* The constructor is a special method that defines how objects are created.
+* The constructor always has the same name as the class.
+* There can be multiple constructors! (via method overloading)
+
+```java
+Point origin = new Point();
+Point seattle = new Point(47, 122);
+```
+
+If someone doesn't provide values program it to default to zero.
+
+```java
+public class Point {
+  public int x;
+  public int y;
+
+  public Point() {
+    this.x = 0; 
+    this.y = 0;  
+  }
+
+  public Point(int x, int y) {
+    this.x = x;  
+    this.y = y;  
+  }
+}
+```
+
+---
+# public vs private
+* The `private` keyword restricts access to class internals.
+* If you define a property on a class as private then anything outside
+  the class file won't be able to access it.
+
+```java
+SafetyDepositBox box = new SafetyDepositBox("ilovemom", "The secret bean sauce is dog meat");
+box.unlock("1234");      // returns "Access denied!"
+box.unlock("ilovemom");  // returns "The secret bean sauce is dog meat"
+box.contents             // trying to access .contents is a compilation error
+```
+
+```java
+public class SafetyDepositBox {
+  private String password;
+  private String contents;
+
+  public SafetyDepositBox(String password, String contents) {
+
+  }
+
+  public String unlock(String passwordAttempt) {
+    if (passwordAttempt.equals(this.password)) {
+      return this.contents;
+    }
+    return "Access denied!";
+  }
+}
+```
+
+---
+# Equality
+https://stackoverflow.com/questions/7520432/what-is-the-difference-between-vs-equals-in-java
+
+* Java uses the `==` double-equals operator to compare primitive values.
+* Java objects use custom `.equals` methods to compare each other.
+* If you use `==` double-equals to compare two objects it will return true if
+  they're literally the same object at the same memory location.
+* The custom `.equals` method will return true if two different instances of
+  a class contain the same information.
+
+```
+Plato: "Oh my god we both have lattes."
+Socrates: "I notice they're very much the same."
+Plato: "Yes they are."
+Socrates: "Certainly they must be ==."
+Plato: "Indeed not. You are holding yours. I am holding mine."
+Socrates: "But they're both lattes."
+Plato: "Yes. Yours and mine are .equals()"
+Socrates: "Ah, I see. Only my latte is == to my own."
+```
+
+And thus socrates was enlightened.
+
+</textarea>
+    <!-- <script src="https://remarkjs.com/downloads/remark-latest.min.js"> -->
+    <script src="file:///Users/moonmayor/Third/remark/out/remark.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+    <!-- <script src="http://5tephen.com/js/remarkable.js"></script> -->
+  </body>
+</html>
