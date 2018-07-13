@@ -1,0 +1,6 @@
+State	Population Ranking	Population State Motto Number of Counties
+California	38332521 Sunshine State 98
+Texas	26448193 Everything is bigger in Texas 12
+New York	19651127 The big apple 32
+Florida	19552860 Florida Man 23
+Illinois	12882135 State of the windy city 24
