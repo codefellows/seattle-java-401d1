@@ -1,27 +1,77 @@
+// connect to this server using telnet:
+// telnet localhost 6789
+
 import java.io.*;
 import java.net.*;
+import java.util.ArrayList;
+import java.util.List;
 
 class TCPServer {
-  public static void main(String argv[]) throws Exception {
-      String clientSentence;
-      String capitalizedSentence;
-      ServerSocket welcomeSocket = new ServerSocket(6789);
+    private static List<User> connections = new ArrayList<>();
 
-      System.out.println("Waiting for connection...");
-      Socket connectionSocket = welcomeSocket.accept();
+    // send a message to all open connections
+    // stretch-TODO: prevent messages from being broadcast to the same user
+    // that sent them.
+    public static void broadcast(String message) {
+        for (User user : connections) {
+            try {
+                DataOutputStream outToClient = new DataOutputStream(user.socket.getOutputStream());
+                outToClient.writeBytes(message);
+            } catch (IOException e) {
 
-      boolean isRunning = true;
-      while (isRunning) {
-          System.out.println("Waiting for message...");
+            }
+        }
+    }
 
-          BufferedReader inFromClient = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
-          DataOutputStream outToClient = new DataOutputStream(connectionSocket.getOutputStream());
+    public static void main(String argv[]) throws Exception {
+        startServer();
+    }
 
-          clientSentence = inFromClient.readLine();
-          System.out.println("Received: " + clientSentence);
+    public static void startServer() {
+        int port = getPort();
 
-          capitalizedSentence = clientSentence.toUpperCase() + '\n';
-          outToClient.writeBytes(capitalizedSentence);
-      }
-  }
+        System.out.println("Connecting to port " + port);
+        try (ServerSocket welcomeSocket = new ServerSocket(port)) {
+            boolean isRunning = true;
+            while (isRunning) {
+                System.out.print("Waiting for connection... ");
+                Socket connectionSocket = welcomeSocket.accept();
+
+                User user = new User("unknown", connectionSocket);
+
+                ConnectionHandler connection = new ConnectionHandler(user);
+                (new Thread(connection)).start();
+
+                connections.add(user);
+                System.out.println("connection received!");
+
+            }
+        } catch (IOException e) {
+
+        }
+    }
+
+    private static String listUsers(String line) {
+        String response = "";
+
+        for (User user : connections) {
+            response += user.toString() + "\n";
+        }
+
+        return response;
+    }
+
+    public static int getPort() {
+        int defaultPort = 6789;
+
+        String portEnv = System.getenv("USER");
+        if (portEnv != null) {
+            try {
+                return Integer.valueOf(System.getenv("PORT"));
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid port: " + portEnv);
+            }
+        }
+        return defaultPort;
+    }
 }

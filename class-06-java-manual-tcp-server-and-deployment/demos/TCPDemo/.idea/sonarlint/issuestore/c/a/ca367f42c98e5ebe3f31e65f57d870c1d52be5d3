@@ -1,11 +1,19 @@
 
-Ysquid:S1197"8Move the array designator from the variable to the type.(‘şªâùÿÿÿÿ8À©ö§Ê,
-ksquid:S2095"JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(µ’‹ÿÿÿÿÿ8À©ö§Ê,
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(Âç8‡òßÊÊ,
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(´™”8¾·àÊÊ,
 8squid:S1220""Move this file to a named package.8À©ö§Ê,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(’ğ±å8Ó”ìÕÊ,
+Lsquid:S1172"+Remove this unused method parameter "line".(µï¶Ìûÿÿÿÿ8ñÃûÕÊ,
+Fsquid:S00108")Either remove or fill this block of code.(ï­£Ä8ÀûÑÓÊ,
 Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(Í„€ùÿÿÿÿ8ë¦ú§Ê,
-Xsquid:S2589"7Remove this expression which always evaluates to "true"(ÓŠ¢ùÿÿÿÿ8ğÔØÊÊ,
+squid:S106"9Replace this use of System.out or System.err by a logger.(·Úˆüÿÿÿÿ8ÀÓÊ,
+Xsquid:S2589"7Remove this expression which always evaluates to "true"(ÓŠ¢ùÿÿÿÿ8ÛÅÎÊ,
+Fsquid:S00108")Either remove or fill this block of code.(ï­£Ä8ÀÓÊ,
+]squid:UnusedPrivateMethod".Remove this unused private "listUsers" method.(µï¶Ìûÿÿÿÿ8èÁ»ÖÊ,
+§%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(‘şªâùÿÿÿÿ8şÊ´ÓÊ,
+Nsquid:S1135"2Complete the task associated to this TODO comment.(éÁ™8‰êüÖÊ,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(èÙüŒÿÿÿÿÿ8ÀÓÊ,
+Ysquid:S1197"8Move the array designator from the variable to the type.(‘şªâùÿÿÿÿ8À©ö§Ê,
+=squid:S1643"Use a StringBuilder instead.(áè™ûÿÿÿÿ8¡»“ÖÊ,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(œÖŞşøÿÿÿÿ8Šó²ÎÊ,
