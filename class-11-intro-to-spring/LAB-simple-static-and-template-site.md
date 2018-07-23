@@ -8,6 +8,10 @@
 * Add CSS to the website to make it look like something more than standard
   bare-bones raw HTML.
 * Deploy your site on heroku
+* Your site should have one homepage that's totally static
+* Your page should have one results page that renders the image result
+* Choose a placeholder image for when there's no results and serve that from
+  your static resource directory.
 
 Use Spring's `@Controller("/path-to-my-route")` annotations to mark the methods
 that control each route. Use Spring's `@RequestParam` annotation to annotate
