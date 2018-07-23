@@ -3,6 +3,7 @@
 ## Resources
 * [Spring Guides: Serving Web Content](https://spring.io/guides/gs/serving-web-content/)
 * [Deploying Spring MVC to Heroku](https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku)
+* [Spring Static Resources](https://spring.io/blog/2013/12/19/serving-static-web-content-with-spring-boot)
 
 ## Learning Objectives
 * Students will be able to configure a Java project with Spring dependencies.
