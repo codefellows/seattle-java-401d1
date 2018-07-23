@@ -1,26 +1,26 @@
-# ![CF](http://i.imgur.com/7v5ASc8.png) Simple Static, Greeting Page, and Server Clock Site
+# ![CF](http://i.imgur.com/7v5ASc8.png) Spring Boot Album Search
 
 ## Resources  
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 
 ## Feature Tasks
-Use Spring to quickly create and deploy a static site to Heroku. Add a page
-that has a parameterized route that can greet someone with their name provided
-in the URL. Add another page that uses a server-side template to display the
-time on the server.
+* Convert your discogs album art website to use Spring.
+* Add CSS to the website to make it look like something more than standard
+  bare-bones raw HTML.
+* Deploy your site on heroku
 
-## Testing
-* Write a test that downloads the page and verifies there's a default greeting.
-* Write a test that provides a custom name as a URL parameter and download the
-  page to make sure it displays the custom greeting.
+Use Spring's `@Controller("/path-to-my-route")` annotations to mark the methods
+that control each route. Use Spring's `@RequestParam` annotation to annotate
+the parameters for the controller method.
+
+```java
+public String greeting(@RequestParam(value="name", required=false, defaultValue="World") String name) {
+
+}
+```
 
 ## Documentation
 Include a link to your live published/deployed site in the `README.md` file.
-
-## Stretch Goals
-Write a program that reads through all of the JSON data in the file containing
-"IMDB Most Popular by Year." Tally up each genre for each year and print out
-the most popular genre for the year.
 
 ## Submission Instructions
 * Work in a fork of this repository
