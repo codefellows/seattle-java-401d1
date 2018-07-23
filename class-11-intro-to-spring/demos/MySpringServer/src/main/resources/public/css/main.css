@@ -1,0 +1,9 @@
+body {
+    background-color: goldenrod;
+}
+
+div {
+    background-color: bisque;
+    padding: 1em;
+    border: solid seafoam 4px;
+}
