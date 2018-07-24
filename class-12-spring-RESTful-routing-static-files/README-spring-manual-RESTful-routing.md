@@ -1,11 +1,22 @@
 # ![CF](http://i.imgur.com/7v5ASc8.png) RESTful Routing
 
+RESTful routing is one way to marry HTTP methods (GET PUT POST DELETE) and url
+patterns with a consistent way to create, read, update and delete data (CRUD
+operations). When we say an API is "RESTful" it means it follows a pattern
+showing one way to organize everything. If we configure our servers to follow
+RESTful patterns more developers will understand how to interact with our data,
+and we can take advantage of tools built to take advantage of RESTful patterns.
+
+Look at the tables below to see how an HTTP method is combined with a URL
+pattern in order to describe what sort of action should occur on data.
+  
 ## Learning Objectives
 * Students will be able to manually configure a server with RESTful routes.
 
 ## Resources
 * [Spring Guides: Serving Web Content](https://spring.io/guides/gs/serving-web-content/)
 * [RESTful Routing](http://restfulrouting.com/#resource)
+* [Baeldung Request Mapping](http://www.baeldung.com/spring-requestmapping)
 
 ## Lecture Outline
 * Review RESTful routing.
