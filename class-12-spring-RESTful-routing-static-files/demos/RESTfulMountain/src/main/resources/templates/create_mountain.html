@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Create a Mountain</title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <h1>Create a mountain</h1>
+        <form action="/api/mountains" method="POST">
+            Name: <input type="text" name="name" />
+            Elevation: <input type="integer" name="elevation" />
+            <input type="submit" />
+        </form>
+    </body>
+</html>

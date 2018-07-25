@@ -12,4 +12,8 @@ public class Mountain {
         this.name = name;
         this.elevation = elevation;
     }
+
+    public String toString() {
+        return this.name + " @ " + this.elevation + "ft";
+    }
 }

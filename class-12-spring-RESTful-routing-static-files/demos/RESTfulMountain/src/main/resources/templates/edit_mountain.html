@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Edit a Mountain</title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <h1>Edit a mountain</h1>
+        <form id="edit-form" th:action="'/api/mountains/' + ${id}" method="PUT">
+            Name: <input type="text" name="name" th:value="${name}"/>
+            Elevation: <input type="integer" name="elevation" th:value="${elevation}"/>
+            <button id="delete-mountain">delete</button>
+            <input type="submit" value="save"/>
+        </form>
+
+        <script src="/js/form.js"></script>
+    </body>
+</html>

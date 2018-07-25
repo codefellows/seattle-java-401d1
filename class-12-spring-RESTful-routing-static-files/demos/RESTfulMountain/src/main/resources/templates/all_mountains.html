@@ -1,0 +1,25 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Create a Mountain</title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <h1>All Mountains</h1>
+        <p>
+            <a href="/mountains/new">
+                add a new mountain
+            </a>
+        </p>
+        <ul>
+            <li th:each="mountain : ${mountains}">
+                <p>
+                    <span th:text="${mountain.name}" /> @
+                    <span th:text="${mountain.elevation}" /> ft
+                    <a th:href="'/mountains/' + ${mountain.id} + '/edit'">
+                        edit
+                    </a>
+                </p>
+            </li>
+        </ul>
+    </body>
+</html>
