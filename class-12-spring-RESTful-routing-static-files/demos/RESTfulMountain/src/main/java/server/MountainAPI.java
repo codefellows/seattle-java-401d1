@@ -26,7 +26,7 @@ public class MountainAPI {
     ) {
         Mountain mountain = new Mountain(name, elevation);
         MountainStorage.mountains.put(mountain.id, mountain);
-        return new ModelAndView("forward:/mountains");
+        return new ModelAndView("redirect:/mountains");
     }
 
     // read all
