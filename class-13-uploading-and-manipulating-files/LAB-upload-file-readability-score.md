@@ -12,6 +12,8 @@ to calculate the score.
 Ignore the syllable metric for now. Calculate it with just the sentence and
 word counting first.
 
+You may assume a sentence is any token that ends with punctuation.
+
 ![Flesch-Kincaid formula](imgs/flesch-kincaid-formula.svg)
 
 ## Testing  
