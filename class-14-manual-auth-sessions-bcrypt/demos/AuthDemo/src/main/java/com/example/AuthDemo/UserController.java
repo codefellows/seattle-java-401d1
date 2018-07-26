@@ -15,17 +15,6 @@ import java.util.List;
 @Controller
 @RequestMapping("/users")
 public class UserController {
-    /*
-    RESTful Resources Routing
-    INDEX	GET	products#index	/products
-    SHOW	GET	products#show	/products/{id}
-    NEW	GET	products#new	/products/new
-    CREATE	POST	products#create	/products
-    EDIT	GET	products#edit	/products/{id}/edit
-    UPDATE	PUT	products#update	/products/{id}
-    DESTROY	DELETE	products#destroy	/products/{id}
-    */
-
     @GetMapping
     @ResponseBody
     public List<User> index() {

@@ -37,6 +37,7 @@ public class User {
     }
 
     public boolean checkPassword(String attempt) {
-        return BCrypt.checkpw(attempt, this.passhash);
+        boolean result = BCrypt.checkpw(attempt, this.passhash);
+        return result;
     }
 }

@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -39,30 +40,32 @@ public class AuthController {
         if (user == null) {
             mv.setViewName("loginerror");
             mv.addObject("error", "Username not found. Choose another.");
-        } else if(user.checkPassword(password)) {
-            mv.setViewName("loginerror");
-            mv.addObject("error", "Wrong password. Try again.");
         } else {
-            mv.setViewName("loggedin");
-            mv.addObject("username", username);
+            boolean isCorrectPassword = user.checkPassword(password);
+            if(isCorrectPassword) {
+                mv.setViewName("loggedin");
+                mv.addObject("username", username);
 
-            HttpSession session = request.getSession();
-            session.setAttribute("username", username);
+                HttpSession session = request.getSession();
+                session.setAttribute("username", username);
+            } else {
+                mv.setViewName("loginerror");
+                mv.addObject("error", "Wrong password. Try again.");
+            }
         }
 
         return mv;
     }
 
     @PostMapping("/logout")
-    public ModelAndView logout(HttpServletRequest request) {
-        request.getSession().invalidate();
+    public ModelAndView logout(HttpServletRequest request, WebRequest wr) {
+        HttpSession session = request.getSession();
+        System.out.println(session.getId() + " " + session.getAttribute("username"));
+
+        wr.removeAttribute("username", WebRequest.SCOPE_SESSION);
+        //session.removeAttribute("username");
+
+        System.out.println(session.getId() + " " + session.getAttribute("username"));
         return new ModelAndView("loggedout");
     }
-
-    @GetMapping("/sessiondata")
-    @ResponseBody
-    public String getSessionData(HttpServletRequest request) {
-        return (String) request.getSession().getAttribute("username");
-    }
-
 }

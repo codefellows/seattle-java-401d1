@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sessions and Auth</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-inline-code {
+        color: rgb(66, 134, 244);
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+# Class 14: Sessions and Auth
+
+## Resources
+* [](https://docs.spring.io/autorepo/docs/spring-security/4.1.3.RELEASE/apidocs/org/springframework/security/crypto/bcrypt/BCrypt.html)
+
+## Learning Objectives
+* Acess and modify session data
+* Model User information to store in a database
+* Use Bcrpyt to hash passwords
+* Store hashed passwords securely in a database
+
+---
+# Accessing Session Data
+```
+@GetMapping
+public String homepage(HttpServletRequest request) {
+  HttpSession session = request.getSession();
+  String username = (String) session.getAttribute("username");
+  System.out.println(username);
+    return "index";
+}
+```
+
+---
+# Connecting to a Database
+```
+try {
+    Class.forName("org.postgresql.Driver");
+    String url = "jdbc:postgresql://localhost:5432/javaauth";
+
+    try {
+        Connection mConn = DriverManager.getConnection(url);
+        ResultSet results = mConn.createStatement().executeQuery("SELECT * FROM users");
+        while (results.next()) {
+            int id = results.getInt("id");
+            String name = results.getString("username");
+        }
+    } catch (SQLException e) {
+        e.printStackTrace();
+        System.out.println("DB error.");
+    }
+} catch (ClassNotFoundException e) {
+    e.printStackTrace();
+    System.out.println("Postgres driver not configured correctly.");
+}
+```
+
+---
+# Seeding a Database
+```
+try {
+    Class.forName("org.postgresql.Driver");
+    String url = "jdbc:postgresql://localhost:5432/javaauth";
+
+    try {
+        mConn = DriverManager.getConnection(url);
+        ResultSet results = mConn.createStatement().executeQuery("SELECT * FROM users");
+        while (results.next()) {
+            int id = results.getInt("id");
+            String name = results.getString("username");
+        }
+    } catch (SQLException e) {
+        e.printStackTrace();
+        System.out.println("DB error.");
+    }
+} catch (ClassNotFoundException e) {
+    e.printStackTrace();
+    System.out.println("Postgres driver not configured correctly.");
+}
+```
+
+---
+# Hashing passwords
+```
+@GetMapping
+public String homepage(HttpServletRequest request) {
+  HttpSession session = request.getSession();
+  String username = (String) session.getAttribute("username");
+  System.out.println(username);
+    return "index";
+}
+```
+
+---
+# Checking passwords
+```
+@GetMapping
+public String homepage(HttpServletRequest request) {
+  HttpSession session = request.getSession();
+  String username = (String) session.getAttribute("username");
+  System.out.println(username);
+    return "index";
+}
+
+---
+# Protecting Routes
+```
+@RequestMapping("/*")
+public ModelAndView handlePrivateRequests(HttpServletRequest request) {
+    String servlet = request.getServletPath();
+    ModelAndView mv = new ModelAndView();
+
+    HttpSession session = request.getSession();
+    String username = (String) session.getAttribute("username");
+    if (username != null) {
+        mv.setViewName("secret");
+    } else {
+        mv.setViewName("accessdenied");
+    }
+
+    return mv;
+}
+```
+
+
+</textarea>
+    <!-- <script src="https://remarkjs.com/downloads/remark-latest.min.js"> -->
+    <script src="file:///Users/moonmayor/Third/remark/out/remark.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+    <!-- <script src="http://5tephen.com/js/remarkable.js"></script> -->
+  </body>
+</html>

@@ -13,12 +13,11 @@ public class PrivateController {
     @RequestMapping("/*")
     public ModelAndView handlePrivateRequests(HttpServletRequest request) {
         String servlet = request.getServletPath();
-        System.out.println(servlet);
-
         ModelAndView mv = new ModelAndView();
 
         HttpSession session = request.getSession();
-        if (session.getAttribute("username") != null) {
+        String username = (String) session.getAttribute("username");
+        if (username != null) {
             mv.setViewName("secret");
         } else {
             mv.setViewName("accessdenied");
