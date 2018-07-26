@@ -20,7 +20,7 @@ public class DemoApplication {
 	public String homepage(HttpServletRequest request) {
 		HttpSession session = request.getSession();
 		String username = (String) session.getAttribute("username");
-		System.out.println(session.getId() + " " + session.getAttribute("username"));
+		System.out.println(session.getId() + " " + username);
 	    return "index";
 	}
 }

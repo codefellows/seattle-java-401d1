@@ -16,8 +16,9 @@ public class PrivateController {
         ModelAndView mv = new ModelAndView();
 
         HttpSession session = request.getSession();
-        String username = (String) session.getAttribute("username");
-        if (username != null) {
+        boolean isLoggedIn = (boolean) session.getAttribute("loggedin");
+        System.out.println("/private " + session.getAttribute("loggedin"));
+        if (isLoggedIn) {
             mv.setViewName("secret");
         } else {
             mv.setViewName("accessdenied");

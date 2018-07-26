@@ -33,7 +33,11 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public ModelAndView login(HttpServletRequest request, @RequestParam String username, @RequestParam String password) {
+    public ModelAndView login(
+            HttpServletRequest request,
+            @RequestParam String username,
+            @RequestParam String password
+    ) {
         ModelAndView mv = new ModelAndView();
 
         User user = UserDB.getUserByName(username);
@@ -47,7 +51,7 @@ public class AuthController {
                 mv.addObject("username", username);
 
                 HttpSession session = request.getSession();
-                session.setAttribute("username", username);
+                session.setAttribute("loggedin", true);
             } else {
                 mv.setViewName("loginerror");
                 mv.addObject("error", "Wrong password. Try again.");
@@ -58,14 +62,9 @@ public class AuthController {
     }
 
     @PostMapping("/logout")
-    public ModelAndView logout(HttpServletRequest request, WebRequest wr) {
+    public ModelAndView logout(HttpServletRequest request) {
         HttpSession session = request.getSession();
-        System.out.println(session.getId() + " " + session.getAttribute("username"));
-
-        wr.removeAttribute("username", WebRequest.SCOPE_SESSION);
-        //session.removeAttribute("username");
-
-        System.out.println(session.getId() + " " + session.getAttribute("username"));
+        session.setAttribute("loggedin", false);
         return new ModelAndView("loggedout");
     }
 }
