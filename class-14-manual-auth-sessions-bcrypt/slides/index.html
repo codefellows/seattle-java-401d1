@@ -33,6 +33,15 @@
 * Store hashed passwords securely in a database
 
 ---
+# Big Idea
+* Set `loggedin` session attribute to `true` when someone logs in
+* Set `loggedin` session attribute to `false` when someone logs in
+* Check `loggedin` session attribute when someone is trying to access
+  a protected resource.
+  * If `loggedin` is `true` render the secret resource
+  * If `loggedin` is `false` return a "denied" page template
+
+---
 # Accessing Session Data
 
 ```java
