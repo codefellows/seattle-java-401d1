@@ -5,6 +5,11 @@
 * [MDN: The Embed Audio Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
 * [Free Music Public Domain](http://www.freemusicpublicdomain.com/)
 
+**You MUST deploy** this lab to Heroku! (but note: Heroku has an "ephemeral"
+filesystem so any files you upload will eventually disappear. They may stay
+there for a moment, but when Heroku shuts down your instances and cycles
+servers every 24 hours your files will definitely be deleted.)
+
 Create a web interface like Spotify allowing users to access MP3 files they've
 uploaded. Protect other users from accessing MP3 files with user authentication
 and authorization.
