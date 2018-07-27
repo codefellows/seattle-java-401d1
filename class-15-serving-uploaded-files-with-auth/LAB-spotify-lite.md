@@ -33,7 +33,8 @@ System.out.println(filepath);
 Display each MP3 in an audio tag so it can be played:
 
 ```
-model.setAttribute("mp3Filepath", "/uploads/filename-of-music.mp3");
+List<Song> songs = getSongsFromDatabaseByUser(userId);
+model.setAttribute("songs", songs);
 
 <div th:each="song : ${songs}">
     <span th:text="${song.title}"></span>
