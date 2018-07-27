@@ -3,13 +3,46 @@
 ## Resources
 * [Spotify](http://spotify.com)
 * [MDN: The Embed Audio Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
+* [Free Music Public Domain](http://www.freemusicpublicdomain.com/)
 
 Create a web interface like Spotify allowing users to access MP3 files they've
 uploaded. Protect other users from accessing MP3 files with user authentication
 and authorization.
 
-Build off the previous labs where users interacted with an Artist and Music
-database, uploaded files, and where you created an auth system.
+Configure your server to upload MP3s to the public directory in
+`src/main/java/resources/public/uploads`.
+
+Build a database that stores the following properties for an MP3:
+* The userid of whoever uploaded the song.
+* The name of the song
+* The artist
+* The uploaded location of the MP3
+
+Build a webpage that allows users to enter information about an MP3 and upload
+an MP3 file. The same page should have a list of all MP3s the user uploaded.
+
+Access the filepath and strip off the `static` prefix to get a URL for the file
+location.
+
+```
+String filepath = storageService.store(file);
+filepath = filepath.split("static")[1];
+System.out.println(filepath);
+```
+
+Display each MP3 in an audio tag so it can be played:
+
+```
+model.setAttribute("mp3Filepath", "/uploads/filename-of-music.mp3");
+
+<div th:each="song : ${songs}">
+    <span th:text="${song.title}"></span>
+    <span th:text="${song.artist}"></span>
+    <audio controls="controls">
+        <source th:src="${song.path}"></source>
+    </audio>
+</div>
+```
 
 # Stretch Goals
 * Add a new table to the database to track how many times a user listens to
