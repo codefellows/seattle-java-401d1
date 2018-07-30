@@ -1,6 +1,0 @@
-
-squid:UselessImportCheck"fRemove this unused import 'org.springframework.boot.context.properties.EnableConfigurationProperties'.(ροχ²8ÿ­®Ν,
-Hsquid:S1602",Remove useless curly braces around statement(£Ω€ς8¥――Ν,
-Nsquid:S1611"2Remove the parentheses around the "args" parameter(£Ω€ς8‡ώ¬Ν,
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(’π€χψÿÿÿÿ8‡ώ¬Ν,

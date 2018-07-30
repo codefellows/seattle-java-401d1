@@ -1,5 +1,0 @@
-
-=squid:S1170"!Make this final field static too.(¦°‡æ8‰Æ”ŸÍ,
-dsquid:UselessImportCheck";Remove this unused import 'java.net.MalformedURLException'.(ªËŞˆ8ÚÄŸÍ,
-usquid:S00116"XRename this field "ROOT_FILEPATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦°‡æ8‰Æ”ŸÍ,
-Hsquid:S1612",Replace this lambda with a method reference.(„£÷¾8ÑÅ‹œÍ,
