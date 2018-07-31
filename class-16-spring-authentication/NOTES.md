@@ -23,3 +23,61 @@ type of thing.
 There's an interface called `Iterable`
 that classes can `implement` to make
 classes targets of forEach loops.
+
+# Basic Traversals
+min()
+max()
+contain(val)
+size()
+
+# Traversal w/
+# extra logic
+* numLeaves()
+* longestBranch()
+
+* in-order (do current in the middle)
+  * recurse left
+  * visit current
+  * recurse right
+
+* pre-order (do current first)
+  * visit current
+  * recurse left
+  * recurse right
+
+* post-order (do current last)
+  * recurse left
+  * recurse right
+  * visit current
+
+* visit ~== "print"
+* visit can be anything, any function
+
+# Basic Structure
+```java
+class TreeNode<E> {
+  E data;
+  TreeNode<E> left;
+  TreeNode<E> right;
+}
+
+class BinaryTree<E> {
+  private TreeNode<E> root;
+
+  public boolean contains();
+  public int size();
+  public void add(E val);
+  public int longestBranch();
+}
+
+int newValue = 11;
+TreeNode node = this.root;
+boolean isDone = false;
+while (!isDone) {
+  if (newValue < node.data) {
+    node = node.left;
+  } else {
+    node = node.right;
+  }
+}
+```

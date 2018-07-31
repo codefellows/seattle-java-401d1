@@ -5,17 +5,13 @@
 
 ## Feature Tasks
 * Create a class called `TreeNode`
-  * Configure the class to use Java generics `E` so you can parameterize the type
-    of data the `TreeNode` holds when it's declared.
-  * Add a public generic property of type `E` called `data`
-  * Add a public property of type `TreeNode<E>` called `left`
-  * Add a public property of type `TreeNode<E>` called `right`
+  * Add a public property of type `int` called `data`
+  * Add a public property of type `TreeNode` called `left`
+  * Add a public property of type `TreeNode` called `right`
 * Create a class called `BinaryTree`
-  * Configure the class to use Java generics `E` so you can parameterize the type
-    of data the `BinaryTree` holds when it's declared.
-  * Add private a property of type `TreeNode<E>` called `root`
+  * Add private a property of type `TreeNode` called `root`
   * Build three public traversal methods that traverse the tree and return the
-    data in the tree as a list of type `List<E>`:
+    data in the tree as a list of type `List`:
     * `inOrder` traversal that visits left, current, right
     * `preOrder` traversal that visits current, left, right
     * `postOrder` traversal that visits left, right, current
@@ -25,7 +21,7 @@
     throughout the tree.
   * Build a public method called `min()` that returns the minimum value all
     throughout the tree.
-  * Build a public method called `contains(E val)` that returns `true` or
+  * Build a public method called `contains(int val)` that returns `true` or
     `false` if the given value is anywhere in the tree.
 
 Use overloaded public/private method pairs to make your class easier to use.
@@ -38,11 +34,11 @@ objects outside the class from passing in frivilous data to class methods.
 The type signatures of two contains methods should look like the following.
 
 ```java
-public boolean contains(E value) {
+public boolean contains(int value) {
   return contains(value, this.root);
 }
 
-private boolean contains(E value, TreeNode<E> node) {
+private boolean contains(int value, TreeNode node) {
 
 }
 ```
