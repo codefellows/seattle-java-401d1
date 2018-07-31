@@ -1,10 +1,12 @@
 # ![CF](http://i.imgur.com/7v5ASc8.png) Authorizing Users to View Secured Content
 
 ## Resources
+
 ### Guides
 * [Spring Postgres Repository Guide](https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/)
 * [Spring Data Repositories](http://www.baeldung.com/spring-data-repositories)
 * [The DAO Pattern in Java](http://www.baeldung.com/java-dao-pattern)
+
 ### Reference
 * [JavaX Validation Constraints](https://docs.oracle.com/javaee/7/api/javax/validation/constraints/package-summary.html)
 * [JPA: Java Persistance API](https://spring.io/guides/gs/accessing-data-jpa/)
