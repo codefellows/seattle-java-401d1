@@ -24,6 +24,11 @@ questions, and anyone can upvote or downvote as much as they want.
       * 12 upvotes 0 downvote
       * 23 upvotes 13 downvotes
       * 0 upvotes 17 downvotes
+* Display each poll in a `<div>` with the text and two things for users to
+  click on to upvote or downvote.
+  * The upvote and downvote items can be `<a>` tags with a link to the
+    upvote/downvote routes, or they can be `<form>` submit buttons, whatever
+    you wish.
 * Add a `POST` route at `/polls` to create a new poll
 * Add a route for upvotes at `/polls/{poll_id}/upvote`
 * Add a route for downbotes at `/polls/{poll_id}/downvote`
