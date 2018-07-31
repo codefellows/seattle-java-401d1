@@ -1,4 +1,4 @@
-# ![CF](http://i.imgur.com/7v5ASc8.png) Authorizing Users to View Secured Content
+# ![CF](http://i.imgur.com/7v5ASc8.png) Java Persistance API (JPA)
 
 ## Resources
 
