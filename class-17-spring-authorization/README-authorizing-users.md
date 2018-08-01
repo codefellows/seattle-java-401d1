@@ -7,6 +7,9 @@
 * [Spring Data Repositories](http://www.baeldung.com/spring-data-repositories)
 * [The DAO Pattern in Java](http://www.baeldung.com/java-dao-pattern)
 
+### Stack Overflows
+* [Bean not found](https://stackoverflow.com/questions/42907553/field-required-a-bean-of-type-that-could-not-be-found-error-spring-restful-ap)
+
 ### Reference
 * [JavaX Validation Constraints](https://docs.oracle.com/javaee/7/api/javax/validation/constraints/package-summary.html)
 * [JPA: Java Persistance API](https://spring.io/guides/gs/accessing-data-jpa/)
