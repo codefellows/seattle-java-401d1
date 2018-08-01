@@ -10,12 +10,20 @@ public class CrewMember {
     @SequenceGenerator(
             name = "crewmember_generator",
             sequenceName = "crewmember_sequence",
-            initialValue = 1000
+            initialValue = 1003
     )
     public long id;
     public String name;
     public String rank;
-
     @Column(name="shirtcolor")
     public String shirtColor;
+
+    // requires default constructor
+    public CrewMember(){}
+
+    public CrewMember(String name, String rank, String shirtColor) {
+        this.name = name;
+        this.rank = rank;
+        this.shirtColor = shirtColor;
+    }
 }

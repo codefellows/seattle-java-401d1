@@ -6,10 +6,24 @@
     <h1>title</h1>
     <p>hello!</p>
     <p th:text="'The current time is: ' + ${currenttime}" />
-    <form>
+    <form action="/crew/" method="POST">
         <label>Name: <input type="text" name="name" /></label>
         <label>Rank: <input type="text" name="rank" /></label>
+        <label>Shirt Color: <input type="text" name="shirtColor" /></label>
         <input type="submit">
     </form>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Rank</th>
+            <th>Shirt Chlor</th>
+        </tr>
+        <tr th:each="crew : ${crew}">
+            <td th:text="${crew.name}"></td>
+            <td th:text="${crew.rank}"></td>
+            <td th:text="${crew.shirtColor}"></td>
+        </tr>
+    </table>
 </body>
 </html>
