@@ -1,3 +1,4 @@
+```
 breadthFirstTraversal(tree) {
   initialize a qq
   put the root in the qq
@@ -7,5 +8,6 @@ breadthFirstTraversal(tree) {
     add it's childen back to the qq
     print the node
 
-  your done
+  you're done
 }
+```
