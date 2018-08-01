@@ -1,4 +1,4 @@
-package models;
+package server.models;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;
@@ -8,6 +8,9 @@ import javax.validation.constraints.Size;
 @Entity
 @Table(name="products")
 public class Product {
+    // requires default constructor
+    public Product() {}
+
     @Id
     @GeneratedValue(generator = "product_generator")
     @SequenceGenerator(
@@ -24,6 +27,13 @@ public class Product {
     @Size(min = 3, max = 100)
     String name;
 
-    @Column(columnDefinition = "text")
+    @Column(name = "text")
     String description;
+
+    public Product(int price, String name, String desc) {
+        this.id = id;
+        this.price = price;
+        this.name = name;
+        this.description = desc;
+    }
 }

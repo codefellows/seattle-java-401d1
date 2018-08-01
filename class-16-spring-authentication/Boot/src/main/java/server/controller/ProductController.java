@@ -1,11 +1,11 @@
-package controller;
+package server.controller;
 
-import models.Product;
+import server.models.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import repository.ProductRepository;
+import server.repository.ProductRepository;
 
 import java.util.List;
 
