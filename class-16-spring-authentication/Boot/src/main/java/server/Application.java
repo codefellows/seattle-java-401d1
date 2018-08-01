@@ -19,7 +19,7 @@ public class Application {
         System.out.println("http://localhost:8080");
     }
 
-    @RequestMapping("/")
+    @RequestMapping("/V}")
     public String index() {
         return "redirect:/products";
     }

@@ -21,14 +21,14 @@ public class Product {
     private Long id;
 
     @Min(0)
-    int price;
+    public int price;
 
     @NotBlank
     @Size(min = 3, max = 100)
-    String name;
+    public String name;
 
     @Column(name = "text")
-    String description;
+    public String description;
 
     public Product(int price, String name, String desc) {
         this.id = id;
