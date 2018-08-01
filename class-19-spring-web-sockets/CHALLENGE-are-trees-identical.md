@@ -5,13 +5,13 @@ Determine if two Binary Trees have identical structures.
 ## Specifications
 - Read all of the following instructions carefully. Name things exactly as described, or you will get a ZERO without comment
 - Do all your work in a public repository called `data-structures-and-algorithms`, with a well-formated, detailed top level README.md matching the example provided by your instructor
-- Create a branch in your repository called `find-maximum-value-binary-tree`
+- Create a branch in your repository called `is-identical`
 - On your branch, create...
     - _Java_: Create a method named `isIdentical` attached to your `BinaryTree`
       class.
-    - _C#_: Create a method named `FindMax()` outside of `Main()` in your `Program.cs` file. Call Your newly created method in `Main()` once complete. 
-    - _JavaScript_: a file called `find-maximum-value-binary-tree.js`
-    - _Python_: a file called `find_maximum_value_binary_tree.py`
+    - _C#_: Create a method named `isIdentical()` outside of `Main()` in your `Program.cs` file. Call Your newly created method in `Main()` once complete. 
+    - _JavaScript_: a file called `is-identical-binary-tree.js`
+    - _Python_: a file called `is_identical_binary_tree.py`
 - Include any language-specific configuration files required for this challenge to become an individual component, module, library, etc.
     - _NOTE: You can find an example of this configuration for your course in your class lecture repository._
 
@@ -110,7 +110,7 @@ t1.isIdentical(t3)   // false
 ## Documentation: Your README.md
 
 ```markdown
-# Find the Maximum Value in a Binary Tree
+# Determine if two Binary Trees are identical
 <!-- Short summary or background information -->
 
 ## Challenge
