@@ -1,7 +1,7 @@
 package tree;
 
 public class BinarySearchTree {
-    private TreeNode root;
+    public TreeNode root;
 
     public TreeNode getRoot() {
         return root;
@@ -115,6 +115,28 @@ public class BinarySearchTree {
         boolean wasOnLeft = contains(value, node.left);
         boolean wasOnRight = contains(value, node.right);
         return wasOnLeft || wasOnRight;
+    }
+
+    // returns the total value of all numbers in the tree added together
+    // public int sum() {
+    //     return sum(this.root);
+    // }
+
+
+    public int sum() {
+        return this.sum(this.root);
+    }
+
+    private int sum(TreeNode node) {
+        if (node == null) {
+            return 0;
+        }
+
+        int leftSum = sum(node.left);
+        int rightSum = sum(node.right);
+        int totalSum = node.data + leftSum + rightSum;
+
+        return totalSum;
     }
 }
 
