@@ -17,9 +17,18 @@ import java.util.List;
 @Controller
 @RequestMapping("/api/mountains")
 public class MountainAPI {
+    @GetMapping("/zoo")
+    public void get1() {
+
+    }
+
+    @GetMapping("/zoo")
+    public void get2() {
+
+    }
+
     // create
     @PostMapping
-    @ResponseBody
     public ModelAndView createMountain(
         @RequestParam("name") String name,
         @RequestParam("elevation") int elevation

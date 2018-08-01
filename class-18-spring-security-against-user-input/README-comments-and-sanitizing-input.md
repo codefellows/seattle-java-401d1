@@ -23,6 +23,14 @@ You must create an environment variable called `DATABASE_URL` in bash. Set it
 equal to the URL for your local database. Use the `heroku pg:push` command to
 upload your database.
 
+Before you push a new database you'll need to run `pg:reset`. It will prompt
+you to confirm the name of your app and force you to type it in because
+`pg:reset` destroys everything on the remote database.
+
+```
+heroku pg:reset
+```
+
 ```
 DATABASE_URL=postgresql://localhost:5432/jpa_products
 heroku pg:push jpa_products DATABASE_URL
