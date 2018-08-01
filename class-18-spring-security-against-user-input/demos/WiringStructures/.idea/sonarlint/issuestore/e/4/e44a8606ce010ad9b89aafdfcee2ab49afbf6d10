@@ -1,0 +1,4 @@
+
+1squid:S1220""Move this file to a named package.
+Qsquid:S1191"5Use classes from the Java API instead of Sun classes.(ÓÎ‘à8†Â»Ï,
+dsquid:UselessImportCheck";Remove this unused import 'com.sun.source.tree.BinaryTree'.(ÓÎ‘à8ïÃ»Ï,
