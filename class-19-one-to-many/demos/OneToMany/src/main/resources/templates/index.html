@@ -1,0 +1,31 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <link rel="stylesheet" href="/main.css">
+    </head>
+    <body>
+        <div id="main">
+            <h1>My Homepage</h1>
+            <p>This is my homepage</p>
+
+            <h3>Genres</h3>
+            <ul>
+                <li th:each="genre : ${genres}">
+                    <span th:text="${genre.genre}" />
+                    <ul>
+                        <li th:each="movie : ${genre.movies}">
+                            <span th:text="${movie.title}" />
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Movies</h3>
+            <ul>
+                <li th:each="movie : ${movies}">
+                    <span th:text="${movie.genre}" />
+                    <span th:text="${movie.title}" />
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
