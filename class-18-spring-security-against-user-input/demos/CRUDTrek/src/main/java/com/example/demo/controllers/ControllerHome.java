@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -25,6 +26,7 @@ public class ControllerHome {
         model.addAttribute("currenttime", date.toString());
 
         List<CrewMember> crew = crewMemberRepository.findAll();
+        Collections.sort(crew);
         model.addAttribute("crew", crew);
 
         return "index";

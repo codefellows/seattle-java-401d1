@@ -17,12 +17,20 @@
         <tr>
             <th>Name</th>
             <th>Rank</th>
-            <th>Shirt Chlor</th>
+            <th>Shirt Color</th>
+            <th>votes</th>
+            <th>upvote</th>
         </tr>
         <tr th:each="crew : ${crew}">
             <td th:text="${crew.name}"></td>
             <td th:text="${crew.rank}"></td>
             <td th:text="${crew.shirtColor}"></td>
+            <td th:text="${crew.votes}"></td>
+            <td>
+                <a th:href="'/crew/' + ${crew.id} + '/upvote'">
+                    upvote
+                </a>
+            </td>
         </tr>
     </table>
 </body>
