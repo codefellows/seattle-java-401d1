@@ -1,7 +1,7 @@
 # ![CF](http://i.imgur.com/7v5ASc8.png) One-to-many Relationships 
 
 ## Resources
-* [iRESTful Spring Repositories](https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/)
+* [RESTful Spring Repositories](https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/)
 
 You're provided with a server that models movie theater companies and theater
 locations. There is a one-to-many relationship between a movie theater company
