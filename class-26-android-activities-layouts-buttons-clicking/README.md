@@ -1,32 +1,37 @@
 # ![CF](http://i.imgur.com/7v5ASc8.png) Android Activities, Layouts and Click Handlers
 
 ## Resources
-* [Download Android Studio]()
+* [Download Android Studio](https://developer.android.com/studio/)
 
 ### Creating a new project  
-First, when creating a new project, assign your company domain to be:  
-```
-android.<yourname>.com
-```  
+* Open Android Studio
+* Choose "Start a new Android Studio project"
+* Choose an Application name
+* Leave the company domain as default
+* Choose a Project Location (make sure you create a folder to contain everything)
+* Leave everything else default
+* Press Next
+* Select the checkbox for "Phone and Tablet, " then choose API level 23
+* Press Next
+* Choose empty-actvity
+* Press Next
+* Leave the Activity Name and Layout Name as defaults
+* Press Finish
 
-Notice the package name update, using reverse DNS  
+Observe Android Studio and Gradle generating an Android project for you.
+Notice that it built a directory structure like
+`app > java > com.example.username.application > MainActivity`.
+MainActivity defines the first thing that will run when someone starts your
+app, like a `Main` method in a traditional Java program.
 
-Continue.  
+Look at the directory structure outside of `app > java` and observe what's
+put under `app > res > layout`. This is where the templates for Android
+applications exist. Notice the file `activity_main.xml` defines what's
+shown on the screen when your app is run.
 
-Select the following Minimum SDK:  
-```
-<Insert here>
-```  
-
-Select Phone and Tablet.  
-
-Continue forward.  
-
-Explain to students that we will start with an Empty Activity at the start of each project to teach the necessary concepts and avoid introducing unnecessary code.  
-
-When prompted, name the Activity `HomeActivity`.  
-
-Continue with finishing creating the new project.  
+## Android Studio Layout
+You should be familiar with the Android Studio layout as it is very similar
+to IntelliJ IDEA.
 
 Now we will go over a quick breakdown of each `Tool Window`  
 * Lefthand side - Project Tool Window  
