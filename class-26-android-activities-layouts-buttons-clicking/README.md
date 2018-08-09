@@ -1,7 +1,25 @@
 # ![CF](http://i.imgur.com/7v5ASc8.png) Android Activities, Layouts and Click Handlers
 
+## Reading
+* Read Big Nerd Ranch
+* **Android Debugger: Issues with the R class** (page 87)
+* **SDK Versions: A Sane Minimum** (page 114)
+* **App Basics** (page 2)
+* **Wiring Up Widgets** (pages 21-23)
+* **Android and Model-View-Controller** (pages 33-46)
+* Read about problems (and solutions!) you might encounter with the `R` class and
+  the Android Studio IDE.
+* What's a sane minimum choice for the Android SDK?
+* Gain an understanding of Android `activities` and `layouts`.
+* Learn how to get a reference to widgets and attach click listeners
+* Review the `GeoQuiz` app in the Model-View-Controller chapter to gain an
+  understanding of how user actions in the app travel from the layout to the activity
+  to modify internal state of the application and modify the layout to make the app
+  interactive.
+
 ## Resources
 * [Download Android Studio](https://developer.android.com/studio/)
+* [Android SDK Releases (API levels 1-28)](https://source.android.com/setup/start/build-numbers)
 
 ### Creating a new project  
 * Open Android Studio
