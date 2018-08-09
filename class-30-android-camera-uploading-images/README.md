@@ -1,5 +1,9 @@
 # ![CF](http://i.imgur.com/7v5ASc8.png) Accessing Camera and Uploading Images
 
+# Reading
+* Read Big Nerd Ranch
+* **Taking Pictures with Intents** (pages 305-316)
+
 ## Resources
 * [Android Training: Taking Photos Simply](https://developer.android.com/training/camera/photobasics.html)
 

@@ -1,5 +1,8 @@
 # ![CF](http://i.imgur.com/7v5ASc8.png) Async Tasks and Downloading Images
 
+# Reading
+* Read Big Nerd Ranch
+* **HTTP and Background Tasks** (pages 473-498)
 
 # References
 * Camera Basics: https://developer.android.com/training/camera/photobasics.html

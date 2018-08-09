@@ -61,7 +61,7 @@ public class MySharedPreferences {
 
 Here's a way to hook up an `EditText` to respond to the enter key.
 
-```
+```java
 EditText mUsernameInput = (EditText) findViewById(R.id.usernameInput);
 mUsernameInput.setOnEditorActionListener(new TextView.OnEditorActionListener() {
   @Override
@@ -75,6 +75,7 @@ mUsernameInput.setOnEditorActionListener(new TextView.OnEditorActionListener() {
   }
 });
 ```
+
 ### Network Requests
 In order for your app to interact with the internet you need to add the
 `android.permission.INTERNET` permission to your app's manifest. This presents
