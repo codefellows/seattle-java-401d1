@@ -2,8 +2,10 @@ package com.example.moonmayor.simpleandroidapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
     private int aClicks;
     private int bClicks;
     private int cClicks;
+
+    private EditText mEditText;
+    private Button mManualUpdate;
 
     private Button mClickMe;
     private Button mAButton;
@@ -27,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mEditText = findViewById(R.id.manualEntry);
+        mManualUpdate = findViewById(R.id.manualUpdate);
+
         mClickMe = findViewById(R.id.clickMe);
         mAButton = findViewById(R.id.aButton);
         mBButton = findViewById(R.id.bButton);
@@ -36,6 +44,21 @@ public class MainActivity extends AppCompatActivity {
         mATextView = findViewById(R.id.aText);
         mBTextView = findViewById(R.id.bText);
         mCTextView = findViewById(R.id.cText);
+
+        mManualUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    String text1 = mEditText.toString();
+                    String text2 = mEditText.getText().toString();
+
+                    totalClicks = Integer.parseInt(text2);
+                    mClicks.setText("Clicks: " + totalClicks);
+                } catch (NumberFormatException e) {
+                    
+                }
+            }
+        });
 
         mClickMe.setOnClickListener(new View.OnClickListener() {
             @Override
