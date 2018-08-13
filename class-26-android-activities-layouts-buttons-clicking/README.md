@@ -55,24 +55,7 @@ Now we will go over a quick breakdown of each `Tool Window`
 * Lefthand side - Project Tool Window  
 * Main View - Editor  
 
-### Gradle  
-Go over `build.gradle`  
-
-Navigate to https://dev.twitter.com/twitterkit/android/installation.  
-
-Demonstrate adding TwitterKit to our `gradle` file.  
-
-Navigate to the `HomeActivity` and in the `onCreate()` method:  
-```java
-Twitter.initialize(this);
-```  
-
-Explain that we will continue deeper into the Twitter SDK in future classes.  
-
-Back to slides.  
-
 ### XML Layouts  
-
 Navigate to `app/res/layout/activity_home.xml` and double-click to view.  
 
 Explain to students that this is where we can design our layouts for Each Activity. We will discuss activities later.  
@@ -86,7 +69,6 @@ Then, go into the `values` directory and inspect the following 2 xml files, and 
 * `colors.xml` - Should contain all the colors for your UI  
 
 ### Android Emulators  
-
 Begin the process of running the application.  
 
 Walkthrough the process of creating a new emulator and choosing the corresponding api version.  
