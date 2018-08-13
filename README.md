@@ -75,8 +75,7 @@
 
 #### Week 6
 * [class-26-android-activities-layouts-buttons-clicking/README.md](./class-26-android-activities-layouts-buttons-clicking/README.md)
-* [class-27-list-views-list-adapters-intents/README-twitter-json-list-adapter.md](./class-27-list-views-list-adapters-intents/README-twitter-json-list-adapter.md)
-* [class-27-list-views-list-adapters-intents/README-twitter-kit.md](./class-27-list-views-list-adapters-intents/README-twitter-kit.md)
+* [class-27-list-views-list-adapters-intents/README-list-adapters.md](./class-27-list-views-list-adapters-intents/README-list-adapters.md)
 * [class-28-android-persistent-storage-sharedprefs-network/README-shared-preferences-and-network-requests.md](./class-28-android-persistent-storage-sharedprefs-network/README-shared-preferences-and-network-requests.md)
 * [class-29-android-internet-requests-async-tasks-downloading-images/README-async-tasks-and-image-listviews.md](./class-29-android-internet-requests-async-tasks-downloading-images/README-async-tasks-and-image-listviews.md)
 * [class-30-android-camera-uploading-images/README.md](./class-30-android-camera-uploading-images/README.md)
