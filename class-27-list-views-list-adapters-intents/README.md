@@ -21,6 +21,9 @@ reading spans are called out specifically, like the section about Singletons.
   * `ViewHolder`
   * `Adapter`
 
+## Resources
+* [Stack Overflow: Start an activity from a fragment](https://stackoverflow.com/questions/15478105/start-an-activity-from-a-fragment)
+
 ## Code Samples
 
 #### Add Second Activity to Manifest
@@ -107,3 +110,79 @@ public class ChooseAnimalActivity {
 		}
 }
 ```
+
+#### Creating a Fragment in an Activity
+
+```java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+
+    FragmentManager fm = getSupportFragmentManager();
+    Fragment fragment = fm.findFragmentById(R.id.fragment_container);
+    if (fragment == null) {
+        fragment = new MainFragment();
+        fm.beginTransaction()
+                .add(R.id.fragment_container, fragment)
+                .commit();
+    }
+}
+```
+
+#### Inflating a Fragment and Wiring Widgets
+* Wire widgets to the class inside the `onCreateView` method in Fragments
+  instead of in the `onCreate` method.
+* use the `view.findViewById` method attached to the view you inflated, not the
+  container that's passed to `onCreateView`.
+
+```java
+@Override
+public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+
+    // possibly do other useful initial things.
+}
+
+@Override
+public View onCreateView(LayoutInflater inflater, ViewGroup container,
+        Bundle savedInstanceState) {
+    View view = inflater.inflate(R.layout.fragment_main, container, false);
+
+    mButton = view.findViewById(R.id.goToTwo);
+    mButton.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(getActivity(), SecondActivity.class);
+            startActivity(intent);
+        }
+    });
+
+    mFavoriteAnimal = view.findViewById(R.id.favoriteAnimal);
+    mChooseAnimal = view.findViewById(R.id.chooseAnimal);
+    mChooseAnimal.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(getActivity(), ChooseAnimalActivity.class);
+            startActivityForResult(intent, REQUEST_GET_ANIMAL);
+        }
+    });
+
+    return view;
+}
+```
+
+#### Start An Activity From a Fragment
+
+Use `getActivity()` inside a Fragment to start another Activity with an intent
+inside a Fragment.
+
+Add an `onActivityResult` method in the fragment just like you would have in
+a normal Activity to receive results.
+
+```java
+Intent intent = new Intent(getActivity(), mFragmentFavorite.class);
+startActivity(intent);
+```
+
+
