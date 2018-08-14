@@ -26,6 +26,47 @@ reading spans are called out specifically, like the section about Singletons.
 
 ## Code Samples
 
+#### Defining String Resources
+Android has a file called `strings.xml` that defines all String resources.
+Android warns against having any raw text anywhere inside your app. Instead of
+making a `<Button>` element and manually setting the `text=` attribute with
+a raw string in the layout, or setting it from a string literal in the
+`Activity` class it's better to define all the strings in one external file.
+
+Extracting all Strings to one file makes it very, very easy to translate and
+internationalize your app in the future. Google is a worldwide company that
+loves and requires themselves to internationalize their apps and products as
+much as possible. They require their engineers to extract their strings to the
+`strings.xml` file.
+
+Android used to literally not allow you to compile an application that included
+raw text in XML layouts. Now Android will only issue a warning, allowing
+developers to build apps a little lazier that Google may direct their employees
+to do themselves.
+
+The process of translating an app and making it more available and accessible
+internationally is called internationalization. People often shorten that word
+to just `i18n`, pronounced "i-eighteen-n" where the number 18 refers to the 18
+letters between `i` and `n` to save everyone from typing such a long word.
+
+A similar process is called `localization` and people will refer to it as
+`l-10-n`. Read about more differences if you're curious:
+
+* [Internationalization vs Localization (i18n vs l10n)](https://www.javacodegeeks.com/2013/02/internationalization-vs-localization-i18n-vs-l10n.html)
+
+**app/res/values/strings.xml**
+```xml
+<string name="notyet">Website %1$s isn\'t yet available, I\'m working on it, please wait %2$s more days</string>
+```
+
+**app/java/..../MainActivity.java**
+```java
+String site = "mywebsite";
+String days = "11";
+
+String notyet = getString(R.string.notyet, site, days);
+```
+
 #### Add Second Activity to Manifest
 Add a second activity to `AndroidManifest.xml`
 
