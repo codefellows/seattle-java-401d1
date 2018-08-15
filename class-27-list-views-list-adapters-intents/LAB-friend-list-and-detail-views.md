@@ -1,4 +1,4 @@
-# ![CF](http://i.imgur.com/7v5ASc8.png) Filterable Friend List and Bio Views
+# ![CF](http://i.imgur.com/7v5ASc8.png) Friend List and Detail Views
 
 ## Resources  
 * [Putting Data in Intents](https://developer.android.com/guide/components/intents-filters.html)
