@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyFavoriteAnimalApp</string>
+    <string name="animal_name_chicken">Chicken</string>
+    <string name="animal_name_cow">Cow</string>
+    <string name="animal_name_dog">Dog</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_animal_chosen">No animal chosen yet.</string>
+    <string name="go_to_second_activity">Go To Second Activity</string>
+    <string name="animal_choice">You chose: %1$s</string>
+</resources>

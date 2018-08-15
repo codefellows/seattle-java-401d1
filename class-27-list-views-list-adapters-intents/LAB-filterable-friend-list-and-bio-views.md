@@ -1,39 +1,45 @@
 # ![CF](http://i.imgur.com/7v5ASc8.png) Filterable Friend List and Bio Views
 
-
 ## Resources  
-* [Android ListView](https://developer.android.com/guide/topics/ui/layout/listview.html)
-* [Stack Overflow: How do I filter a ListView?](https://stackoverflow.com/a/14663821)
 * [Putting Data in Intents](https://developer.android.com/guide/components/intents-filters.html)
-  
-Build an app that features a search bar where someone can look their friends up,
-choose a friend and see details about their friend. This of this as similar to
-the way Instagram allows you to search for friends accounts, it offers
-suggestions and filters results in a list as you type, and you can click on
-their name and navigate to their profile where you can read more about them,
-and see their pictures. Our app will be simpler than full-fledged Instagram.
 
-A friend's Bio page should simply show a paragraph of text about them.
+This lab focuses on creating apps with multiple activites, and passing info
+from one activity to another via Intents. This lab does not involve passing
+data backwards as a result from a started activity back to the first activity.
 
-Your app should have at least two activities:
-1. An activity with a search bar that displays a list of friends and filters
-   the list down to show only partial matches as you type.
-2. An activity that shows the details (short biography) of a user. It should
-   display their username prominently and include their descriptive paragraph.
-   Include a back button so users can navigate back to the search list.
-   
-Use Intents and `putExtra()` to start the detail view activity from the search
-activity. Put the username the user chose as data with the extra when the
-second activity starts.
+Build an app with the following:
 
-### Populating the Data
-Either create your own mock data, or ask the instructors if they've made
-available an interesting data set based of real life popular twitter accounts.
+* A class `Friend` with at least the following properties:
+  * A public String `name` property for their name
+  * A public String `bio` property for a short description of them
+* `MainActivity`
+  * A `TextView` with a short intro explaining what your app is about, like
+    "use this app to find out a little more about my friends."
+  * A `Button` that says "See My Friends"
+* `FriendsActivity`
+  * Includes a hard-coded array with five of your friends.
+  * Only show the friends name.
+  * Do not show the friends bio.
+  * A `Button` for each friend that says "More" and launches the
+    `FriendDetailActivity`
+  * Use an `Intent` to launch the second activity
+  * Put an `extra` on the intent with the friend's name.
+  * Put an `extra` on the intent with the friend's short bio.
+  * Do not try to pass the entire `Friend` object through as an extra on an
+    intent. Intents are good at passing primitive values. It requires more work
+    to pass our own custom classes.
+* `FriendDetailActivity`
+  * Use a `ConstraintView` as the main outer layout
+  * Have a large bold `TextView` showing your friend's name.
+  * Have a smaller paragraph under the name showing your friend's short bio
+  * Have a `Button` constrained to the bottom of the page that says "Back"
+  * Have the "Back" button `finish()` the activity without setting a result
+    to pass information back to the activity.
   
 ## Stretch Goals
-Add profile images to each user. Customize the ListView to display a small icon
-showing their profile image. Show a slightly larger version of their profile
-image in their detail bio view.
+Include a picture for each of your friends. Add a `int` id so your hard-coded
+array can reference a Drawable. Show the each friend's picture when you view
+their detail page.
 
 ## Submission Instructions
 * Work in a fork of this repository
@@ -42,3 +48,4 @@ image in their detail bio view.
 * Open a pull request to this repository
 * Submit on canvas a question and observation, how long you spent, and a link to
   your pull request
+
