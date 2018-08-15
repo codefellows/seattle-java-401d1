@@ -1,9 +1,17 @@
 # ![CF](http://i.imgur.com/7v5ASc8.png) Persistent Storage with Shared Preferences, and Simple Network Requests
 
+Read about `SharedPreferences` for simple storage between activities, read
+about how to perform simple HTTP requests to draw data in via the internet, and
+read about how to display lists using the `RecyclerView`.
+
+Share about what sort of applications you imagine you'll be able to build with
+these new pieces of Android.
+
 ## Resources
 * [Shared Preferences Guide](https://developer.android.com/guide/topics/data/data-storage.html#pref)
 * [Using Shared Preferences](https://developer.android.com/training/data-storage/shared-preferences.html)
 * [Sending a Simple Request](https://developer.android.com/training/volley/simple.html)
+* [Recycler View](https://developer.android.com/guide/topics/ui/layout/recyclerview#java)
 
 ### Persistent Storage
 It can be hard to persist information while users switch from activity to
