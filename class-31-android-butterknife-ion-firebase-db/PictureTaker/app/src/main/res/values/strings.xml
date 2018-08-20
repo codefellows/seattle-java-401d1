@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PictureTaker</string>
+    <string name="set_alarm">Set alarm</string>
+    <string name="general_send">General Send</string>
+    <string name="sms_text">SMS Text</string>
+    <string name="helloWorld">Hello World!</string>
+    <string name="take_picture">take picture</string>
+    <string name="save_picture">save picture</string>
+    <string name="open_map">open map</string>
+    <string name="callMom">call mom</string>
+</resources>
