@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FirebasePhotos</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="open_maps">Open Maps</string>
+    <string name="send_email">Send Email</string>
+    <string name="call_phone">Call Phone</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="save_picture">Save Picture</string>
+</resources>
