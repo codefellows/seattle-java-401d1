@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PhotoDownloader</string>
+    <string name="load_image">Load Image</string>
+    <string name="unset_image">Unset Image</string>
+    <string name="unset_w_ion">Unset w/ Ion</string>
+    <string name="unset_w_fresco">Unset w/ fresco</string>
+</resources>
