@@ -1,6 +1,8 @@
 # ![CF](http://i.imgur.com/7v5ASc8.png) Firebase Realtime Database
 
 ## Resources
+* [Butterknife](http://jakewharton.github.io/butterknife/)
+* [Ion](https://github.com/koush/ion)
 * [Firebase Database](https://firebase.google.com/docs/database/android/start/)
 * [YouTube: Firebase Realtime Database on Android (8:03)](https://www.youtube.com/watch?v=lpFDFK44pX8)
 
