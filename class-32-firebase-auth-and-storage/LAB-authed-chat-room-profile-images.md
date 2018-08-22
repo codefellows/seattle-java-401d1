@@ -1,36 +1,42 @@
-# ![CF](http://i.imgur.com/7v5ASc8.png) Authed Chat Room and Profile Images
+# ![CF](http://i.imgur.com/7v5ASc8.png) Instagram-Like Image List
 
 ## Resources  
-* [Firebase Auth](https://firebase.google.com/docs/auth/android/firebaseui)
-* [Firebase Storage](https://firebase.google.com/docs/storage/android/start)
-* [YouTube Getting Started with Firebase Auth on Android (4:53)](https://www.youtube.com/watch?v=SXlidHy-Tb8)
-* [YouTube: Getting Started with Firebase Storage on Android (8:30)](https://www.youtube.com/watch?v=7puuTDSf3pk)
+* [Ion Image Library](https://github.com/koush/ion)
+* [Imgur Free Image Hosting](https://imgur.com/)
 
-Create an app that allows users to create an account with a profile image,
-log in, and join one chat room where they can talk to other users.
+Continue practicing building lists with the `RecyclerView` and a custom
+Adapter. Use the `Ion` image library to download images and display the images
+inside `ImageView` views in the ViewHolder.
 
-This lab combines Firebase Auth, Storage and the Realtime Database. Use Firebase
-Auth to create accounts and log users in. Store their profile images in Firebase
-Storage. Keep track of user account and profile picture associations with the
-Firebase Database. Store chat messages in the Firebase Database.
+Build an app that displays a list of images, as if they were uploaded from
+instagram.  Create a class with properties for the image url, and at least two
+addtional properties (like a username, a timestamp, or a description of the
+image).
 
-Retrieve and display the chat history when a user joins a chatroom. Keep them
-subscribed to the realtime changes in the database and show new messages as
-they come in.
+Create a hard-coded list of the images and their additional information and
+make it accessible to the adapter attached to the `RecyclerView`.
 
-Ensure that the chat messages are in reverse chronological order so the newest
-messages are always display at the bottom of the chat room view.
+The images should be hosted externally somewhere online, and not dropped inside
+your Drawables folder.
 
-Display the chat's username, the user's profile image, and a small timestamp
-with each chat message.
+### Example Ion interaction
+```java
+Ion.with(imageView)
+.placeholder(R.drawable.placeholder_image)
+.error(R.drawable.error_image)
+.load("http://example.com/image.png");
+```
 
-## Stretch Goals
-Once your made one default global chat room try to make a new activity that
-represents a lobby where users can see several different chat rooms to join.
-Modify the structure of your Firebase Database to store chats across different
-rooms.
+### Gradle Dependencies
 
-Allow users to click a button to create a new room and give the new room a name.
+```gradle
+dependencies {
+  implementation 'com.jakewharton:butterknife:8.8.1'
+  annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+  compile 'com.koushikdutta.ion:ion:2.+'
+}
+```
   
 ## Submission Instructions
 * Work in a fork of this repository
