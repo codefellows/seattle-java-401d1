@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FirebaseChatroom</string>
+    <string name="write_random_text">Write Random Text</string>
+</resources>
