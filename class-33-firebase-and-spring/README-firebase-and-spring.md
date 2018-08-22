@@ -1,52 +1,96 @@
-# ![CF](http://i.imgur.com/7v5ASc8.png) Firebase Integration on Spring
+# ![CF](http://i.imgur.com/7v5ASc8.png) Firebase Database Integration on Android
 
+Read the Firebase docs for working with the Firebase Database and Android.
 
 ## Resources
-* [Setup for Firebase REST API](https://firebase.google.com/docs/database/rest/start)
-* [Java Firebase Wrapper (alpha!)](https://github.com/bane73/firebase4j)
-* [Streaming from the REST API](https://firebase.google.com/docs/database/rest/retrieve-data#section-rest-streaming)
+* [Get Started](https://firebase.google.com/docs/database/android/start/)
+* [Structure Data](https://firebase.google.com/docs/database/android/structure-data)
+* [Read and Write Data](https://firebase.google.com/docs/database/android/read-and-write)
+* [Work with Lists of Data](https://firebase.google.com/docs/database/android/lists-of-data)
 
-## Learning Objectives
-* Students will be able to read, write and manipulate information in a Firebase
-  Database from their Spring server.
-* Students will be able to query Firebase for information and process it on
-  their Spring server.
-* Students will be able to make their Spring server act like a middle-man
-  between Firebase and another client.
-* Students will be able to make their Spring server manipulate data between
-  Firebase and another client.
+### Write to Your Database
+```java
+// Write a message to the database
+FirebaseDatabase database = FirebaseDatabase.getInstance();
+DatabaseReference myRef = database.getReference("message");
 
-## Lecture Outline
-* Firebase is fantastic, but it doesn't allow us to perform queries, or react to
-  logic as much as we can with SQL.
-* We can set up a Spring server to act as a middle man between Firebase and
-  other clients. The Spring server can expose routes clients can query, and
-  inside those routes the Spring server can query Firebase and pre-process
-  the information before returning it to the client.
-* Having a server preprocess information between Firebase and the client
-  allows us to perform logic Firebase doesn't support, and possibly saves
-  the client from performing expensive operations it doesn't need to do.
-  * We generally assume phones have less computing power than our server.
-    It's better for the server to crunch data than to offload that work to
-    the client.
-* Having a server act as a middleman also allows us to add additional logic
-  before data is saved to the database, or when data is read.
-  * For example, when you write data you can add logic that prevents anyone in a
-    chat room from sending a message with the letter `e`
-  * Also, when you write data you can detect if the message does something like
-    mentioned `@someone` and generate a notification to that user.
-  * When you're reading data to send back to the client you can manipulate it
-    by doing things like sorting it in a certain order, or otherwise manipulating
-    the data to make it easier for the client to read
-## Demo
-* Create a simple bare-bones chat room with Firebase
-* Run chat commands through an endpoint on the server that rejects any message
-  with an "e" in it.
-  
-### Streaming from the REST API
-* Configure the Spring server to use the Firebase REST Streaming API
-  to retrieve live data-change events in real time.
-* Configure a website to communicate with the Spring server with WebSockets
-  to preserve the back-and-forth communication Firebase normally provides.
-* Configure the Spring server to send changes from the Streaming API to
-  the socket it's got open with the web browser.
+myRef.setValue("Hello, World!");
+```
+
+### Read From Your Database
+```java
+// Read from the database
+myRef.addValueEventListener(new ValueEventListener() {
+    @Override
+    public void onDataChange(DataSnapshot dataSnapshot) {
+        // This method is called once with the initial value and again
+        // whenever data at this location is updated.
+        String value = dataSnapshot.getValue(String.class);
+        Log.d(TAG, "Value is: " + value);
+    }
+
+    @Override
+    public void onCancelled(DatabaseError error) {
+        // Failed to read value
+        Log.w(TAG, "Failed to read value.", error.toException());
+    }
+});
+```
+
+### Java Compared to Firebase Database
+This shows how to interact with Firebase to save a complex object you have in
+your application. Compare your understanding of how the class creates a Map to
+represent itself to how it interacts with Firebase to save itself.
+
+#### Vanilla Java Interactions
+```java
+public class Post {
+
+    public String uid;
+    public String author;
+    public String title;
+    public String body;
+    public int starCount = 0;
+    public Map<String, Boolean> stars = new HashMap<>();
+
+    public Post() {
+        // Default constructor required for calls to DataSnapshot.getValue(Post.class)
+    }
+
+    public Post(String uid, String author, String title, String body) {
+        this.uid = uid;
+        this.author = author;
+        this.title = title;
+        this.body = body;
+    }
+
+    public Map<String, Object> toMap() {
+        HashMap<String, Object> result = new HashMap<>();
+        result.put("uid", uid);
+        result.put("author", author);
+        result.put("title", title);
+        result.put("body", body);
+        result.put("starCount", starCount);
+        result.put("stars", stars);
+
+        return result;
+    }
+}
+```
+
+#### Saving to Firebase Database
+```java
+private void writeNewPost(String userId, String username, String title, String body) {
+    // Create new post at /user-posts/$userid/$postid and at
+    // /posts/$postid simultaneously
+    String key = mDatabase.child("posts").push().getKey();
+    Post post = new Post(userId, username, title, body);
+    Map<String, Object> postValues = post.toMap();
+
+    Map<String, Object> childUpdates = new HashMap<>();
+    childUpdates.put("/posts/" + key, postValues);
+    childUpdates.put("/user-posts/" + userId + "/" + key, postValues);
+
+    mDatabase.updateChildren(childUpdates);
+}
+```
