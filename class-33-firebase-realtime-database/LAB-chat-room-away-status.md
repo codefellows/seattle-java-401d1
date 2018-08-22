@@ -9,6 +9,7 @@
 they're doing. Status in this app is a combination of a type of status (online,
 away, or offline) and a line of text describing what the user is doing.
 
+* Someone can be simply online/away/offline without any status text
 * Someone can be online and "working on TPS reports"
 * Someone can be online and "listening to the new U2 album"
 * Someone can be away and "grabbing a sandwich"
@@ -22,9 +23,10 @@ they want to convey to other users.
 ## Application Architecture
 Make two Activities:
 * A `LoginActivity` that accepts someone's username (no auth or password)
-  and has a button to go to the activiry with a list of other users.
+  and has a button to go to the activity with a list of other users.
 * A `UserList` activity that shows a list of users, their statuses and
-  their status text.
+  their status text. No status text is displayed if the users doesn't have
+  status text set.
 
 Use Android `SharedPreferences` to store the user's username between the
 `LoginActivity` and the `UserList` activity.
