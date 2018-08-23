@@ -1,55 +1,113 @@
-# ![CF](http://i.imgur.com/7v5ASc8.png) Firebase Messaging and Storage
+# ![CF](http://i.imgur.com/7v5ASc8.png) Firebase Auth
 
 ## Resources
-* [How to Configure Firebase Messaging](https://firebase.google.com/docs/cloud-messaging/android/client)
-* [Ion: Asynchronous Image Loading](https://github.com/koush/ion)
+* [Into to Firebase Auth](https://firebase.google.com/docs/auth/)
+* [Users in Firebase](https://firebase.google.com/docs/auth/users)
+* [Setting Up Firebase Auth](https://firebase.google.com/docs/auth/android/start/)
+* [Anonymous Sign In](https://firebase.google.com/docs/auth/android/anonymous-auth)
 
-## Learning Objectives
-* Students will be able to upload an image to Firebase
-* Students will be able to store the URL locations of images uploaded to Storage
-  in the Firebase Database
-* Students will be able to retrieve and display a list view of images uploaded
-  to Storage
-* Students will be able to trigger notifications on devices when the app is
-  in the background
+## Check for Understanding
+* What are the five fixed basic properties on all Firebase Users?
+* How do you keep track of additional information for a user?
 
-## Lecture Outline
+```java
+@Override
+public void onStart() {
+    super.onStart();
+    // Check if user is signed in (non-null) and update UI accordingly.
+    FirebaseUser currentUser = mAuth.getCurrentUser();
+}
+```
 
-#### Messaging
-* Users like to receive notifications about important events
-* We'll use Firebase messaging to notify users they receive new chats.
-* Download the Firebase demo repo and run the Messaging demo app.
-* Build a project from scratch and configure it to use Firebase Messaging.
-* Use the Firebase console to send notifications to the app.
+#### Create New Users
+```java
+mAuth.createUserWithEmailAndPassword(email, password)
+.addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+		@Override
+		public void onComplete(@NonNull Task<AuthResult> task) {
+				if (task.isSuccessful()) {
+						// Sign in success, update UI with the signed-in user's information
+						Log.d(TAG, "createUserWithEmail:success");
+						FirebaseUser user = mAuth.getCurrentUser();
+						updateUI(user);
+				} else {
+						// If sign in fails, display a message to the user.
+						Log.w(TAG, "createUserWithEmail:failure", task.getException());
+						Toast.makeText(EmailPasswordActivity.this, "Authentication failed.",
+										Toast.LENGTH_SHORT).show();
+						updateUI(null);
+				}
 
-#### Heterogeneous ListViews
-Slack allows users to chat, and to upload images. When a user uploads an image
-it shows up right in the chat room. Users don't post a link and other users
-click the link view the image. Slack actually renders the image right there
-visible to everyone in the chat room.
+				// ...
+		}
+});
+```
 
-Let's discuss how to upgrade out ListView so it can render diverse content.
-Let's make our chat messages more "widgety."
+#### Sign in Existing Users
 
-* Build small views customized for different types of messages. Make sure they
-  each work so you can see an image, or play audio:
-  * Text Message
-  * Image Message
-  * Audio Message
-  * Interactive Vote Message (very fancy)
-* All of these messages will extend from one class `Message` so we can keep
-  them all in one list.
-* Model Java classes that will capture the data in each different type of message
-* Choose messages, and media to include in an example conversation that we'll
-  use
-  * Someone says hello
-  * Someone responds
-  * Someone posts an image (it's rendered so other users see it)
-  * Someone replies "lol"
-  * Someone posts a song  (other users can click "play" to hear it)
-* Build logic in the list adapter that detects what type of message is sent
-  in each message.
-  * text, text, image, text, audio
-* Write a `getView()` message that returns a specific customized layout for the
-  type of message
-* Render the list and see the customized listviews come in.
+```java
+mAuth.signInWithEmailAndPassword(email, password)
+.addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+		@Override
+		public void onComplete(@NonNull Task<AuthResult> task) {
+				if (task.isSuccessful()) {
+						// Sign in success, update UI with the signed-in user's information
+						Log.d(TAG, "signInWithEmail:success");
+						FirebaseUser user = mAuth.getCurrentUser();
+						updateUI(user);
+				} else {
+						// If sign in fails, display a message to the user.
+						Log.w(TAG, "signInWithEmail:failure", task.getException());
+						Toast.makeText(EmailPasswordActivity.this, "Authentication failed.",
+										Toast.LENGTH_SHORT).show();
+						updateUI(null);
+				}
+
+				// ...
+		}
+});
+```
+
+#### Obtain User Information
+
+```java
+FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+if (user != null) {
+    // Name, email address, and profile photo Url
+    String name = user.getDisplayName();
+    String email = user.getEmail();
+    Uri photoUrl = user.getPhotoUrl();
+
+    // Check if user's email is verified
+    boolean emailVerified = user.isEmailVerified();
+
+    // The user's ID, unique to the Firebase project. Do NOT use this value to
+    // authenticate with your backend server, if you have one. Use
+    // FirebaseUser.getIdToken() instead.
+    String uid = user.getUid();
+}
+```
+
+#### Anonymous Sign In
+```java
+mAuth.signInAnonymously()
+.addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+		@Override
+		public void onComplete(@NonNull Task<AuthResult> task) {
+				if (task.isSuccessful()) {
+						// Sign in success, update UI with the signed-in user's information
+						Log.d(TAG, "signInAnonymously:success");
+						FirebaseUser user = mAuth.getCurrentUser();
+						updateUI(user);
+				} else {
+						// If sign in fails, display a message to the user.
+						Log.w(TAG, "signInAnonymously:failure", task.getException());
+						Toast.makeText(AnonymousAuthActivity.this, "Authentication failed.",
+										Toast.LENGTH_SHORT).show();
+						updateUI(null);
+				}
+
+				// ...
+		}
+});
+```
