@@ -28,8 +28,6 @@ Make two Activities:
   their status text. No status text is displayed if the users doesn't have
   status text set.
 
-Use Android `SharedPreferences` to store the user's username between the
-`LoginActivity` and the `UserList` activity.
 
 The `UserList` activity should show a list of all users, their status and their
 status text. Include a way for users to set their own status and enter status
