@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MyInstagram</string>
+    <string name="title_activity_login2">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="sign_in">Sign in via email</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="sign_in_anonymously">Sign in anonymously</string>
+    <string name="sign_in_with_google">sign in with google</string>
+    <string name="logout">Logout</string>
+    <string name="must_be_logged_in">You must be logged in to view user details.</string>
+    <string name="signed_in_as">Signed in as:</string>
+    <string name="proceed_to_feed">Proceed to feed</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="post">Post</string>
+</resources>
