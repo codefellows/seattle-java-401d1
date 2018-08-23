@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ClickingFirebaseRealtimeDatabase</string>
+    <string name="clicks">clicks</string>
+    <string name="increment">increment</string>
+    <string name="enter_your_status">enter your status</string>
+    <string name="sign_in">sign in</string>
+</resources>
