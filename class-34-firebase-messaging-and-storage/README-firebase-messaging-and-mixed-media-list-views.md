@@ -1,12 +1,14 @@
 # ![CF](http://i.imgur.com/7v5ASc8.png) Firebase Auth
 
 ## Resources
+* [compiledSdkVersion vs targetSdkVersion](https://stackoverflow.com/a/26694276/735468)
 * [Into to Firebase Auth](https://firebase.google.com/docs/auth/)
 * [Users in Firebase](https://firebase.google.com/docs/auth/users)
 * [Setting Up Firebase Auth](https://firebase.google.com/docs/auth/android/start/)
 * [Anonymous Sign In](https://firebase.google.com/docs/auth/android/anonymous-auth)
 
 ## Check for Understanding
+* What's the purpose and differences between compiledSdk, minSdk and targetSdk?
 * What are the five fixed basic properties on all Firebase Users?
 * How do you keep track of additional information for a user?
 
