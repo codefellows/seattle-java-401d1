@@ -1,11 +1,26 @@
-# ![CF](http://i.imgur.com/7v5ASc8.png) Firebase Free for All
+# ![CF](http://i.imgur.com/7v5ASc8.png) Shared Preferences
 
+## Resources
+* [Toast Notifications](https://developer.android.com/guide/topics/ui/notifiers/toasts)
+* [Shared Preferences](https://developer.android.com/training/data-storage/shared-preferences)
+* [Saving App State](https://developer.android.com/topic/libraries/architecture/saving-states)
+* [Runtime Changes](https://developer.android.com/guide/topics/resources/runtime-changes)
+* [Handling Lifecycles](https://developer.android.com/topic/libraries/architecture/lifecycle)
+* [Navigation Component](https://developer.android.com/topic/libraries/architecture/navigation/)
+* [Principles of Navigation](https://developer.android.com/topic/libraries/architecture/navigation/navigation-principles)
 
-This day is dedicated to creating an app that uses all the functionality of
-Firebase. It's a chance to tie everything together into one cohesive app.
+`Toast` notifications are a great way to display useful temporary data to
+a user. Toast notifications appear in a small window that displays on top of
+everything else for a brief period of time. They slide up and display like
+a piece of toast out of a toaster!
 
-It's centered around creating a chat application that depends on:
-* The realtime database
-* Firebase Auth
-* Firebase Storage (for pictures, user profiles)
-* Firebase Cloud Messaging (to notify users)
+`SharedPreferences` are a good way to store simple key-value data in your
+application across various activities. 
+
+Read about Android lifecycles. Understand how rotating an Android devices and
+the app changing orientation may obliterate text in `EditText` views and ways
+to preserve this information.
+
+Read about the Android lifecycle and understand what it means for an
+application to be interupted by another application or lose focus. What state
+will you have to preserve?
