@@ -39,6 +39,7 @@ Now that these values are in an array let's write a function that returns the
 value associated with a key.
 
 ```java
+// slow O(N) lookup looking 1 by 1 through whole array
 public V get(K key) {
   for (KeyValuePair kv : neighborhoods) {
     if (kv.key.equals(key)) {
@@ -48,6 +49,20 @@ public V get(K key) {
 
   // no match found
   return null;
+}
+```
+
+```java
+// super fast O(1) lookup using hash function
+public V getUsingHash(K key) {
+  // use any valid hash function
+  int hashCode = hash(key);
+
+  // convert the hashCode to a valid array index
+  int index = hashCode % neighborhoods.size();
+
+  // access that index directly.
+  return neighborhoods.get(index);
 }
 ```
 
