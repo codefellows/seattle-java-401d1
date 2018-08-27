@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/goToSeattle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/zoomOut"
+                android:text="@string/zoom_out"
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/zoomIn"
+                android:text="@string/zoom_in"
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/goToSeattle"
+            android:text="@string/go_to_seattle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/toggleSattelite"
+            android:text="Toggle Sattelite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

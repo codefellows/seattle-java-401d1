@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MapsApp</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="go_to_seattle">Go to Seattle</string>
+    <string name="zoom_out">zoom out</string>
+    <string name="zoom_in">Zoom in</string>
+</resources>
