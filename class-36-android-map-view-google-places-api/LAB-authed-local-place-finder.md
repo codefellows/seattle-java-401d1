@@ -1,29 +1,21 @@
-# ![CF](http://i.imgur.com/7v5ASc8.png) Authed Local Search App
+# ![CF](http://i.imgur.com/7v5ASc8.png) Persistent Map App
 
 ## Resources
 * [Getting Started with Google Maps](https://developers.google.com/maps/documentation/android-api/start)
 * [MapView Docs](https://developers.google.com/android/reference/com/google/android/gms/maps/MapView)
-* [Google Places Android API](https://developers.google.com/places/android-api/)
-* [Accessing Android Location Data](https://developers.google.com/maps/documentation/android-api/location)
+* [Android Guide: Save key-value data](https://developer.android.com/training/data-storage/shared-preferences)
+* [StackOverflow: How to Use SharedPreferences](https://stackoverflow.com/questions/3624280/how-to-use-sharedpreferences-in-android-to-store-fetch-and-edit-values)
 
 ## Feature Tasks
-Create an Android app that uses the `MapView`, determines your current GPS
-location, and uses the Google Places API to allow users to search for places
-near them.
+Create an app that loads a map view and allows users to pan around and zoomin
+and out. Your app should persist it's own state so users alaways see where they
+last left off.
 
-Clear the map whenever someone performs a search so the map doesn't become
-polluted with tons of pointer pins.
-
-Choose an appropriate layout that allows you to display a fullscreen map across
-the entire screen (besides the top menu bar) and allows you to place a search
-box for users to type in, and buttons.
-
-Use Firebase Auth to authorize users to use the app. We'll use more with auth
-and maps later.
-
-## Testing  
-* Write JUnit tests to make sure you can interact with the Google Places API
-  appropriately.
+Your app must have:
+* A zoom in button
+* A zoom out button
+* A button to toggle through at least two different map view types
+* A button that takes the user to one of your favorite places
 
 ## Documentation
 In your `README.md` include screenshots of your app.
