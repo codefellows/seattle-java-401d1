@@ -3,6 +3,9 @@
 ## Resources
 * [Location and Maps Guide](https://developer.android.com/guide/topics/location/index.html)
 * [MapView Docs](https://developers.google.com/android/reference/com/google/android/gms/maps/MapView)
+* [OnStop vs OnDestroy](https://stackoverflow.com/questions/29355290/onstop-vs-ondestroy)
+* [onPause vs onSaveInstanceState](https://stackoverflow.com/questions/5166201/onsaveinstancestate-and-onpause)
+* [Navigation Drawer Layout](https://developer.android.com/training/implementing-navigation/nav-drawer#java)
 
 ## Learning Objectives
 * Students will be able to render an Android Google Maps MapView inside an
