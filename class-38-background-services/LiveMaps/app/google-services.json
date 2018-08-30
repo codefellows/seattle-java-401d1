@@ -1,0 +1,528 @@
+{
+  "project_info": {
+    "project_number": "675962258151",
+    "firebase_url": "https://storage-2cad2.firebaseio.com",
+    "project_id": "storage-2cad2",
+    "storage_bucket": "storage-2cad2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675962258151:android:361905e278fc9c96",
+        "android_client_info": {
+          "package_name": "com.example.moonmayor.androidupload"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675962258151-fm2rtf0v2425ekvnau9okghoidvl34ur.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moonmayor.androidupload",
+            "certificate_hash": "d282c50bc28c2f69d0ad1ceca292f1beedf2f912"
+          }
+        },
+        {
+          "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9-Koe37bNaQBtVBXGIkDBAnzlOadkgzg"
+        },
+        {
+          "current_key": "AIzaSyCYJb-jhRzQDFzMhsRzxZYI34iXRDjSgqs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675962258151:android:111395f0ae4828d0",
+        "android_client_info": {
+          "package_name": "com.example.moonmayor.firebasedb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675962258151-q345uu8op9cn36mcshfch6h2kh5h6b07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moonmayor.firebasedb",
+            "certificate_hash": "d282c50bc28c2f69d0ad1ceca292f1beedf2f912"
+          }
+        },
+        {
+          "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9-Koe37bNaQBtVBXGIkDBAnzlOadkgzg"
+        },
+        {
+          "current_key": "AIzaSyCYJb-jhRzQDFzMhsRzxZYI34iXRDjSgqs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675962258151:android:958dfb3187ffac9a",
+        "android_client_info": {
+          "package_name": "com.example.moonmayor.firebasediviningrod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675962258151-l4c47tub97givrjoktgaqkg7gnpls2io.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moonmayor.firebasediviningrod",
+            "certificate_hash": "d282c50bc28c2f69d0ad1ceca292f1beedf2f912"
+          }
+        },
+        {
+          "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9-Koe37bNaQBtVBXGIkDBAnzlOadkgzg"
+        },
+        {
+          "current_key": "AIzaSyCYJb-jhRzQDFzMhsRzxZYI34iXRDjSgqs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675962258151:android:b99bffc0ac340921",
+        "android_client_info": {
+          "package_name": "com.example.moonmayor.firebasemaps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675962258151-9jfne64junece3t3vh5jnpnj85qq0hi2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moonmayor.firebasemaps",
+            "certificate_hash": "d282c50bc28c2f69d0ad1ceca292f1beedf2f912"
+          }
+        },
+        {
+          "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9-Koe37bNaQBtVBXGIkDBAnzlOadkgzg"
+        },
+        {
+          "current_key": "AIzaSyCYJb-jhRzQDFzMhsRzxZYI34iXRDjSgqs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675962258151:android:5f9a65aef0fd74e3",
+        "android_client_info": {
+          "package_name": "com.example.moonmayor.firebasephotos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675962258151-m0vip5oniovep04sm4itsvctqjq9n5nl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moonmayor.firebasephotos",
+            "certificate_hash": "d282c50bc28c2f69d0ad1ceca292f1beedf2f912"
+          }
+        },
+        {
+          "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9-Koe37bNaQBtVBXGIkDBAnzlOadkgzg"
+        },
+        {
+          "current_key": "AIzaSyCYJb-jhRzQDFzMhsRzxZYI34iXRDjSgqs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675962258151:android:d863d8bf16fea5e0",
+        "android_client_info": {
+          "package_name": "com.example.moonmayor.livemaps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675962258151-1qt1nmkvinr87kqiigm4ge49thvkuog0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moonmayor.livemaps",
+            "certificate_hash": "d282c50bc28c2f69d0ad1ceca292f1beedf2f912"
+          }
+        },
+        {
+          "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9-Koe37bNaQBtVBXGIkDBAnzlOadkgzg"
+        },
+        {
+          "current_key": "AIzaSyCYJb-jhRzQDFzMhsRzxZYI34iXRDjSgqs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675962258151:android:2e74614a08380aab",
+        "android_client_info": {
+          "package_name": "com.example.moonmayor.mapstoandfrom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675962258151-1na12gsuh2ueo3h971fbsn7fuio8ds8p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moonmayor.mapstoandfrom",
+            "certificate_hash": "d282c50bc28c2f69d0ad1ceca292f1beedf2f912"
+          }
+        },
+        {
+          "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9-Koe37bNaQBtVBXGIkDBAnzlOadkgzg"
+        },
+        {
+          "current_key": "AIzaSyCYJb-jhRzQDFzMhsRzxZYI34iXRDjSgqs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675962258151:android:d279e1b02a3f9879",
+        "android_client_info": {
+          "package_name": "com.example.moonmayor.myinstagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675962258151-l7mmbbhp202f7v4d318ld9a59hr45jdf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moonmayor.myinstagram",
+            "certificate_hash": "d282c50bc28c2f69d0ad1ceca292f1beedf2f912"
+          }
+        },
+        {
+          "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9-Koe37bNaQBtVBXGIkDBAnzlOadkgzg"
+        },
+        {
+          "current_key": "AIzaSyCYJb-jhRzQDFzMhsRzxZYI34iXRDjSgqs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675962258151:android:7a0c7bfb7ed4e780",
+        "android_client_info": {
+          "package_name": "com.example.moonmayor.photodownloadlist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675962258151-tjn249opk8qtognlotuhagbcpsrbp73f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moonmayor.photodownloadlist",
+            "certificate_hash": "d282c50bc28c2f69d0ad1ceca292f1beedf2f912"
+          }
+        },
+        {
+          "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9-Koe37bNaQBtVBXGIkDBAnzlOadkgzg"
+        },
+        {
+          "current_key": "AIzaSyCYJb-jhRzQDFzMhsRzxZYI34iXRDjSgqs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675962258151:android:e459a26d46e9e124",
+        "android_client_info": {
+          "package_name": "com.example.moonmayor.slothgram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675962258151-jr7qa03cnt5c59rrfl14hcbfkv9mjfd8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moonmayor.slothgram",
+            "certificate_hash": "d282c50bc28c2f69d0ad1ceca292f1beedf2f912"
+          }
+        },
+        {
+          "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9-Koe37bNaQBtVBXGIkDBAnzlOadkgzg"
+        },
+        {
+          "current_key": "AIzaSyCYJb-jhRzQDFzMhsRzxZYI34iXRDjSgqs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675962258151:android:a806387762327d53",
+        "android_client_info": {
+          "package_name": "com.google.firebase.quickstart.firebasestorage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675962258151-s98aohiasuckaqoguaechdn05dgpm3af.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.firebase.quickstart.firebasestorage",
+            "certificate_hash": "d282c50bc28c2f69d0ad1ceca292f1beedf2f912"
+          }
+        },
+        {
+          "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9-Koe37bNaQBtVBXGIkDBAnzlOadkgzg"
+        },
+        {
+          "current_key": "AIzaSyCYJb-jhRzQDFzMhsRzxZYI34iXRDjSgqs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675962258151-q8d8038c4lp6pat7916h8f74034ih0e1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
