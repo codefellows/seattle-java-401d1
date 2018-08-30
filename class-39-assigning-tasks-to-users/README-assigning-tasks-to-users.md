@@ -1,4 +1,4 @@
-# ![CF](http://i.imgur.com/7v5ASc8.png) Assigning Tasks To Users
+# ![CF](http://i.imgur.com/7v5ASc8.png) Master Detail / Background Services
 
 ## Readings
 * Big Nerd Ranch Chapter 17: Master-Detail Interfaces
