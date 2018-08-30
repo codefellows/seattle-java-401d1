@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LiveMaps</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_errand_list">ErrandListActivity</string>
+    <string name="go_to_my_location">Go to my Location</string>
+</resources>
