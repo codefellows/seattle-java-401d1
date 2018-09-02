@@ -1,33 +1,27 @@
-# ![CF](http://i.imgur.com/7v5ASc8.png) Dartboard Cricket Live Scorekeeping Tool
+# ![CF](http://i.imgur.com/7v5ASc8.png) Dartboard Live Scorekeeping Tool
 
 ## Resources  
 * [Cricket (darts)](https://en.wikipedia.org/wiki/Cricket_(darts))
 
-Use Android's canvas to draw a dartboard. Write logic to allow users to drag
-and tap their finger around to set scores. Follow the rules of cricket where
-players are only aiming for 15-20, and the bullseye and only score points when
-they've closed a point-bracket out (by hitting it three times).
+Begin the entire project using the "Tabbed Activity" project starter.
+Ignore the Tabbed Activity that was created for now.
 
-Input up to the three shots each player is allowed to take and send that
-information to the server. The server should intercept the data, compare it
-to data in Firebase already, and process the Firebase data to update the scores
-for everyone. Allow the Firebase changes to automatically propagate back to
-the phone.
+Create a new empty activity that allows users to choose how many players are in
+a game. Press "Begin Game" and start a new ScoreKeeper activity. Use the Tabbed
+Activity that was created for the ScoreKeeper activity.
 
-## Feature Tasks  
-#### Exercise
-Exercise description
+Populate the tabbed activity with Fragments that keep score.
 
-* Requirement / clarification N
+Create a Fragment that controls user interactions with a dartboard.  Use
+a canvas to draw a dartboard. Write logic to allow users to drag and tap their
+finger around to set scores. A user should be able to set three scores for a
+turn and the app should show a list of their hits and score total. Make sure
+there's a way for a user to input a "miss" for any of the three shots.
 
-## Testing  
-* Use JUnit to write a test for each of the Feature Tasks.
+Users should be able to flip through the different tabbed activities to input
+scores for each user.
 
-## Documentation
-In your `README.md`
-
-## Stretch Goals
-Bonus bonus bonus
+Make one activity that shows the overall scores for each player.
 
 ## Submission Instructions
 * Work in a fork of this repository
