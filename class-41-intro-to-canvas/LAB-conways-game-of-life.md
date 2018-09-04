@@ -10,8 +10,19 @@ Create an application that simulates Conway's Game of Life. Display the
 simulation on a Canvas view and pick some practical assumptions for the size
 of the cell (like 50 pixels, or something).
 
-Add play/step/pause/clear buttons to allow users to play the simulation,
-watch it move step by step and easily reset it.
+Add `step` and `clear` buttons to allow users to watch the simulation
+step-by-step, and easily reset it. Do not configure the app to have the
+animation "play." Users must press the `step` button to have the simulation
+move forward tick by tick.
+
+## Conway's Game of Life Rules
+* Any live cell with fewer than two live neighbors dies, as if by under
+  population.
+* Any live cell with two or three live neighbors lives on to the next generation.
+* Any live cell with more than three live neighbors dies, as if by
+  overpopulation.
+* Any dead cell with exactly three live neighbors becomes a live cell, as if by
+  reproduction.
 
 ## Testing  
 * Write JUnit tests for small boards that verify cells are born, live and die
