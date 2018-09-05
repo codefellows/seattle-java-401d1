@@ -15,6 +15,24 @@ step-by-step, and easily reset it. Do not configure the app to have the
 animation "play." Users must press the `step` button to have the simulation
 move forward tick by tick.
 
+Use the concept of creating an "engine" to store the data of the game, and
+making methods that manipulate the data. Your engine should
+(highly-recommended) have the following properties:
+
+* Contains a 2D array of boolean values
+* Has a method `tick` that progresses from one state to the next
+  * Create a new array the same size as your original array that
+    counts how many neighbors each cell has
+  * Use the new array to modify the original array after you've counted
+    all neighbors relative from each cell
+  * If you try to count the neighbors and modify the original array
+    simultaneously then you'll mutate data in the middle of the process and
+    mess things up. (Cells may be marked dead that were initially alive when
+    counting started.)
+* Has a method `toggle` that accepts `xx` and `yy` coordinates and toggles
+  `true` and `false` values for a certain position in the two-dimensional
+  array.
+
 ## Conway's Game of Life Rules
 * Any live cell with fewer than two live neighbors dies, as if by under
   population.
