@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/clock"
+        android:src="@drawable/clock"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/canvas"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="10sp"
+        app:layout_constraintTop_toTopOf="@id/clock"
+        app:layout_constraintRight_toRightOf="@id/clock"
+        app:layout_constraintBottom_toBottomOf="@id/clock"
+        app:layout_constraintLeft_toLeftOf="@id/clock"
+        android:layout_width="0sp"
+        android:layout_height="0sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@+id/clock"
+        app:layout_constraintBottom_toTopOf="@+id/setAlarm">
+        <TextView
+            android:id="@+id/hour"
+            android:text="@string/zero_zero"
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="@string/colon"
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/minute"
+            android:text="@string/zero_zero"
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/amPm"
+            android:text="@string/am"
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/setAlarm"
+        android:text="@string/set_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

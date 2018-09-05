@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AlarmClock</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="zero_zero">00</string>
+    <string name="colon">:</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="space" />
+</resources>
