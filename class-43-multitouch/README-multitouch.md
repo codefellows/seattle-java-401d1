@@ -1,5 +1,7 @@
 # ![CF](http://i.imgur.com/7v5ASc8.png) Multitouch
 
+## Resources
+* [Handle multi-touch gestures](https://developer.android.com/training/gestures/multi)
 
 ## Learning Objectives
 * Students will be able to respond to multiple simultaneous touch events
