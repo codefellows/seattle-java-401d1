@@ -1,33 +1,38 @@
-# ![CF](http://i.imgur.com/7v5ASc8.png) Chwazi Finger Chooser
+# ![CF](http://i.imgur.com/7v5ASc8.png) Multi-Touch
 
 ## Resources  
+* [Handling Multi-Touch Gestures](https://developer.android.com/training/gestures/multi)
 * [Chwazi Finger Chooser](https://play.google.com/store/apps/details?id=com.tendadigital.chwaziApp&hl=en)
   
-Create a multi-touch application that allows a group of users to each place a
-finger on the phone, waits for some number of fingers to be held down
-consistently for some period of time, then randomly choose one finger and
-highlights where it's touching on the screen.
+Create a multi-touch application that tracks multiple touch points and draws
+circles to indicate where they are when they're pressed, moved around and
+lifted off the screen.
 
 Use the Canvas to draw different colored circles around each finger as it presses
-and moves around the screen. The winning circle should stay on the screen for some
-time before disappearing after being chosen.
+and moves around the screen. 
 
-Download and play with the Chwazi Finger Choose app to see how it behaves.
+Create three classes to help model, track and draw touches on the screen:
+* `TouchPointer`
+  * Tracks one touch with `id`, `xx`, `yy`, `color` properties
+* `MultiTouchEngine`
+  * `add(int id, float xx, float yy)`
+  * `update(int id, float xx, float yy)`
+  * `remove(int id)`
+* `MultiTouchEngineDrawer`
+  * The constructor accepts `MultiTouchEngine`, `Bitmap`, `Canvas` and `ImageView`
+  * `clear()`
+  * `draw()`
 
-## Feature Tasks  
-#### Exercise
-Exercise description
-
-* Requirement / clarification N
-
-## Testing  
-* Use JUnit to write a test for each of the Feature Tasks.
-
-## Documentation
-In your `README.md`
+Remember that `event.getAction()` won't react to the general
+`ACTION_POINTER_DOWN` action event. You must use masked actions in order to
+detect it for multiple touches.
 
 ## Stretch Goals
-Bonus bonus bonus
+Allows a group of users to each place a finger on the phone, waits for some
+number of fingers to be held down consistently for some period of time, then
+randomly choose one finger and highlights where it's touching on the screen.
+
+Download and play with the Chwazi Finger Choose app to see how it behaves.
 
 ## Submission Instructions
 * Work in a fork of this repository
