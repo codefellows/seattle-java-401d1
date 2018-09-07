@@ -1,7 +1,7 @@
 # ![CF](http://i.imgur.com/7v5ASc8.png) Security: XSS and SQL Injection
 
 ## Resources
-* [Interactive SQL Injection Tutorial](https://www.codebashing.com/sql_demo)
+* [Interactive SQL Injection Tutorial](https://free.codebashing.com/free-content/java/sql_injection)
 * [OWASP SQL Injection](https://www.owasp.org/index.php/SQL_Injection)
 * [Wikipedia: Samy (computer worm)](https://en.wikipedia.org/wiki/Samy_(computer_worm))
 * [Self-XSS](https://en.wikipedia.org/wiki/Self-XSS)
