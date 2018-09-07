@@ -6,6 +6,13 @@
 * [Wikipedia: Samy (computer worm)](https://en.wikipedia.org/wiki/Samy_(computer_worm))
 * [Self-XSS](https://en.wikipedia.org/wiki/Self-XSS)
 
+## Additional Topics
+* [Markov Chains](https://en.wikipedia.org/wiki/Markov_chain)
+* [Markov Chains Visually Explained](http://setosa.io/ev/markov-chains/)
+* [Recursive Backtracking](https://en.wikipedia.org/wiki/Backtracking)
+* [What is vim?](https://hackaday.com/2016/08/08/editor-wars-the-revenge-of-vim/)
+* [Editor War (vim vs emacs)](https://en.wikipedia.org/wiki/Editor_war)
+
 ### Long-reads
 * [The MySpace Worm that Changed the Internet Forever](https://motherboard.vice.com/en_us/article/wnjwb4/the-myspace-worm-that-changed-the-internet-forever)
 * [Dan Kaminsky (Seattleite) Discovers Fundamental Flaw in Internet](https://www.wired.com/2008/07/kaminsky-on-how/)
