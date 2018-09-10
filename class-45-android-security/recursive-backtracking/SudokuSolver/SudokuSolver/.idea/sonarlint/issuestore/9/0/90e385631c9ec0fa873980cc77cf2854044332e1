@@ -1,0 +1,14 @@
+
+8squid:S1220""Move this file to a named package.8Ë€´Û,
+„"squid:ClassVariableVisibilityCheck"QMake input a static final constant or non-public and provide accessors if needed.(ÒÔä¸8Ë€´Û,
+‚"squid:ClassVariableVisibilityCheck"OMake col a static final constant or non-public and provide accessors if needed.(¶¤´ó8Ë€´Û,
+Gsquid:S1444"+Make this "public static input" field final(ÒÔä¸8Ë€´Û,
+lsquid:S3008"PRename this field "COUNT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓÖª¿8Ë€´Û,
+‚"squid:ClassVariableVisibilityCheck"OMake row a static final constant or non-public and provide accessors if needed.(²¤÷”8Ë€´Û,
+Gsquid:S1444"+Make this "public static COUNT" field final(ÓÖª¿8Ë€´Û,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(´ğÄôÿÿÿÿÿ8„´´Û,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(è¢õøùÿÿÿÿ8Ë€´Û,
+S
+squid:S106"9Replace this use of System.out or System.err by a logger.(¡©¥G8™×ˆ´Û,
+„"squid:ClassVariableVisibilityCheck"QMake COUNT a static final constant or non-public and provide accessors if needed.(ÓÖª¿8Ë€´Û,
