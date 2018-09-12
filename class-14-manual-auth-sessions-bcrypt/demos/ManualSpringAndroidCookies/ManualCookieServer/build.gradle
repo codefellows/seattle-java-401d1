@@ -1,0 +1,37 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.8.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile('org.springframework.boot:spring-boot-starter')
+  	compile('org.springframework.boot:spring-boot-starter-web')
+  	compile("org.springframework.boot:spring-boot-devtools")
+
+	// https://mvnrepository.com/artifact/org.mindrot/jbcrypt
+	compile group: 'org.mindrot', name: 'jbcrypt', version: '0.3m'
+
+	compile group: 'postgresql', name: 'postgresql', version: '9.0-801.jdbc4'
+
+	compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+}
